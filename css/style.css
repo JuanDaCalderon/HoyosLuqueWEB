@@ -1,0 +1,330 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "IconosHL";
+  src: url("../assets/fonts/IconosHL.eot?liy16o");
+  src: url("../assets/fonts/IconosHL.eot?liy16o#iefix") format("embedded-opentype"), url("../assets/fonts/IconosHL.ttf?liy16o") format("truetype"), url("../assets/fonts/IconosHL.woff?liy16o") format("woff"), url("../assets/fonts/IconosHL.svg?liy16o#IconosHL") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "IconosHL" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Banos:before {
+  content: "";
+}
+
+.icon-Dormitorios:before {
+  content: "";
+}
+
+.icon-Parqueaderos:before {
+  content: "";
+}
+
+.color-primary {
+  color: #0060a2 !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4.h5,
+h6 {
+  font-family: "Bebas Neue", cursive;
+}
+
+/* HEADER NAVBAR STYLES*/
+header.NavBar a.Logo {
+  width: 11%;
+}
+
+header.NavBar nav.navbar {
+  -webkit-box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.NavBar ul.navbar-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #00354c !important;
+}
+
+header.NavBar ul.navbar-nav a:hover {
+  color: #4f76b0 !important;
+}
+
+header.NavBar li.nav-item.active a {
+  font-weight: 500;
+}
+
+header.NavBar div.ServiciosDropDown {
+  border: none;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
+}
+
+header.NavBar div.ServiciosDropDown hr {
+  background-color: rgba(79, 118, 176, 0.3);
+}
+
+/* MAIN COVER STYLES */
+section.main.cover {
+  background-image: url(../assets/Home/Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+section.main.cover h1 {
+  position: absolute;
+  font-size: 6.5em;
+  text-shadow: 1px 2px 6px black;
+  line-height: 0.8em;
+  bottom: 125px;
+  left: 200px;
+}
+
+section.main.cover h1 span {
+  font-size: 0.8em;
+}
+
+section.main.cover form.HomeBuscador {
+  width: 80%;
+  position: absolute;
+  bottom: 325px;
+  left: 200px;
+}
+
+section.main.cover form.HomeBuscador label {
+  color: #0060a2;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2em;
+}
+
+section.main.cover form.HomeBuscador input,
+section.main.cover form.HomeBuscador select {
+  min-height: 45px;
+}
+
+section.main.cover form.HomeBuscador button {
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.main.cover form.HomeBuscador button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
+}
+
+/* CRRUSEL STYLES */
+.px-6 {
+  padding-left: 6.5rem !important;
+  padding-right: 6.5rem !important;
+}
+
+section.destacados h2 {
+  color: #0060a2;
+  font-size: 4.5em;
+}
+
+section.destacados hr.Barra {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.destacados a.btn-primary {
+  font-size: 2.2em;
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  background-color: transparent;
+  bottom: 0px;
+  right: 0;
+  border: none;
+  line-height: 645px;
+}
+
+section.destacados a.btn-primary:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(60%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
+}
+
+section.destacados a.btn-secundary {
+  font-size: 2.2em;
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  background-color: transparent;
+  bottom: 0px;
+  right: 0;
+  border: none;
+  line-height: 645px;
+}
+
+section.destacados a.btn-secundary:hover {
+  background-color: transparent;
+}
+
+section.destacados .card-body div.customtext p.Icons {
+  font-size: 1.3em;
+}
+
+section.destacados .card-body div.customtext p.Icons i {
+  font-size: 1.1em;
+  padding: 0px 9px;
+}
+
+section.destacados .card-body div.customtext p {
+  font-size: 1.2em;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+.controls-top {
+  text-align: right;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  left: 0px;
+}
+
+a.btn-floating {
+  color: white;
+  border: solid 2px white;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 21px;
+  font-size: 27px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  background-color: #0060a2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a.btn-floating:hover {
+  background-color: white;
+  color: grey;
+  text-decoration: none;
+}
+
+a.btn-floating.prev {
+  right: 40px;
+  text-indent: -2px;
+}
+
+a.btn-floating.next {
+  text-indent: 2px;
+}
+
+ol.carousel-indicators.destacados {
+  bottom: -70px;
+}
+
+ol.carousel-indicators.destacados li {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  background-color: #4f76b0;
+}
+
+div.h-7em {
+  height: 7em;
+}
+
+/* SECTION FORMULARIO */
+section.Formulario {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0060a2), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, #0060a2, rgba(255, 255, 255, 0));
+}
+
+section.Formulario div.Caption {
+  top: 130px;
+  left: 490px;
+}
+
+section.Formulario div.Caption h3 {
+  font-size: 4em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.Formulario div.Caption p {
+  font-size: 2em;
+  font-weight: 400;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION MAP */
+section.Map div.caption h2 {
+  font-size: 3.5em;
+  color: #4f76b0;
+}
+
+section.Map div.direccion h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0060a2;
+}
+
+section.Map div.direccion p {
+  font-size: 1.1em;
+}
+
+section.Map button {
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.Map button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: #4f76b0;
+}
+
+footer a {
+  font-weight: 600;
+}
+
+footer span {
+  font-weight: 400;
+}
+
+footer div.bg_blue {
+  background-color: #0060a2;
+}
+
+@media (max-width: 1200px) {
+  header.NavBar div.ServiciosDropDown {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
