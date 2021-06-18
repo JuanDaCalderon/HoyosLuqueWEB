@@ -1,3 +1,3 @@
 # HoyosLuqueWEB
-Ejecutar en Servidor local
-estilos desde SASS
+- Ejecutar en Servidor local
+- estilos desde SASS
