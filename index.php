@@ -64,7 +64,7 @@
       <!--First slide-->
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
@@ -108,7 +108,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
@@ -137,7 +137,7 @@
       <!--Second slide-->
       <div class="carousel-item">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img04.png" alt="img01">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img05.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$120.000.000</p></a>
@@ -181,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img06.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
@@ -209,7 +209,7 @@
       <!--Third slide-->
       <div class="carousel-item">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img07.png" alt="img01">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$130.000.000</p></a>
@@ -231,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img08.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$525.000.000</p></a>
@@ -253,7 +253,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img09.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$600.000.000</p></a>
@@ -298,7 +298,7 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/DomusSanPatricio.jpg" alt="Domus San patricio">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS SAN PATRICIO</p></a>
@@ -324,7 +324,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/Domus104.jpg" alt="Domus 104">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>Domus 104</p></a>
@@ -350,7 +350,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/DomusOriginal.jpg" alt="Domus Original">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS 106</p></a>
