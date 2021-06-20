@@ -1,0 +1,13 @@
+/* FOOTER STYLES */
+footer {
+  background-color: $SecondBlue;
+  a {
+    font-weight: map-get($FontWeights, w600);
+  }
+  span {
+    font-weight: map-get($FontWeights, w400);
+  }
+  div.bg_blue {
+    background-color: $MainBlue;
+  }
+}

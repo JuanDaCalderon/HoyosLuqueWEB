@@ -1,0 +1,92 @@
+$MainBlue: #0060a2;
+$SecondBlue: #4f76b0;
+$MenuTitleTextBlue: #00354c;
+$FormBlue: #394d7c;
+
+$icomoon-font-family: "IconosHL" !default;
+$icomoon-font-path: "../assets/fonts" !default;
+
+$icon-Banos: "\e900";
+$icon-Dormitorios: "\e901";
+$icon-Parqueaderos: "\e902";
+
+$FuenteMontserrat: "Montserrat", sans-serif;
+$FuenteBebas: "Bebas Neue", cursive;
+$BreakPointSmall: 576px;
+$BreakPointMedium: 768px;
+$BreakPointLarge: 992px;
+$BreakPointExtraLarge: 1200px;
+
+$FontWeights: (
+  w100: 100,
+  w200: 200,
+  w300: 300,
+  w400: 400,
+  w500: 500,
+  w600: 600,
+  w700: 700,
+  w800: 800,
+  w900: 900,
+);
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?liy16o");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?liy16o#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?liy16o")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?liy16o")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?liy16o##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Banos {
+  &:before {
+    content: $icon-Banos;
+  }
+}
+.icon-Dormitorios {
+  &:before {
+    content: $icon-Dormitorios;
+  }
+}
+.icon-Parqueaderos {
+  &:before {
+    content: $icon-Parqueaderos;
+  }
+}
+.color-primary {
+  color: $MainBlue !important;
+}
+.color-FormBlue {
+  color: $FormBlue !important;
+}
+body {
+  font-family: $FuenteMontserrat;
+}
+h1,
+h2,
+h3,
+h4.h5,
+h6 {
+  font-family: $FuenteBebas;
+}

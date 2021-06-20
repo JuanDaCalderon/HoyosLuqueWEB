@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables */
 @font-face {
   font-family: "IconosHL";
   src: url("../assets/fonts/IconosHL.eot?liy16o");
@@ -88,6 +89,31 @@ header.NavBar div.ServiciosDropDown hr {
   background-color: rgba(79, 118, 176, 0.3);
 }
 
+@media (max-width: 1200px) {
+  header.NavBar div.ServiciosDropDown {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: #4f76b0;
+}
+
+footer a {
+  font-weight: 600;
+}
+
+footer span {
+  font-weight: 400;
+}
+
+footer div.bg_blue {
+  background-color: #0060a2;
+}
+
+/* Estilos de la HOME PAGE */
 /* MAIN COVER STYLES */
 section.main.cover {
   background-image: url(../assets/Home/Banner.jpg);
@@ -346,27 +372,27 @@ section.Map a.redIcon:hover {
   font-size: 2em;
 }
 
-/* FOOTER STYLES */
-footer {
-  background-color: #4f76b0;
+/* Estilos de las Paginas de Busquedas */
+section.coverInternas {
+  background-image: url(../assets/Banners/Busqueda.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
 }
 
-footer a {
-  font-weight: 600;
+section.coverInternas div.wrap {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(#101831));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
 }
 
-footer span {
-  font-weight: 400;
+section.coverInternas div.wrap h1 {
+  font-size: 6.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-footer div.bg_blue {
-  background-color: #0060a2;
-}
-
-@media (max-width: 1200px) {
-  header.NavBar div.ServiciosDropDown {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-  }
+section.coverInternas div.wrap p {
+  margin-top: -0.5em;
+  font-size: 1.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

@@ -45,9 +45,9 @@
                         <li class="mx-4 nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
                             <div class="dropdown-menu ServiciosDropDown my-0 py-1" aria-labelledby="dropdownServicios">
-                                <a class="dropdown-item" href="#">VENTA</a>
+                                <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/ventas">VENTA</a>
                                 <hr class="my-0">
-                                <a class="dropdown-item" href="#">ARRIENDO</a>
+                                <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/arriendo">ARRIENDO</a>
                             </div>
                         </li>
                         <li class="mx-4 nav-item">

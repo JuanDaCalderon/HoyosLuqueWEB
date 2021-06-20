@@ -1,0 +1,35 @@
+/* HEADER NAVBAR STYLES*/
+header.NavBar {
+  a.Logo {
+    width: 11%;
+  }
+  nav.navbar {
+    box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
+  }
+  ul.navbar-nav a {
+    font-family: $FuenteMontserrat;
+    font-weight: map-get($FontWeights, w400);
+    color: $MenuTitleTextBlue !important;
+    &:hover {
+      color: $SecondBlue !important;
+    }
+  }
+  li.nav-item.active a {
+    font-weight: map-get($FontWeights, w500);
+  }
+  div.ServiciosDropDown {
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    hr {
+      background-color: rgba(79, 118, 176, 0.3);
+    }
+  }
+}
+@media (max-width: $BreakPointExtraLarge) {
+  header.NavBar {
+    div.ServiciosDropDown {
+      box-shadow: none !important;
+    }
+  }
+}
