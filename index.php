@@ -88,7 +88,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img02">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
@@ -110,7 +110,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img03">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
@@ -139,7 +139,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img04.png" alt="img01">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
@@ -161,7 +161,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img02">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img05.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$120.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
@@ -183,7 +183,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img03">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img06.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
@@ -211,7 +211,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img07.png" alt="img01">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$130.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
@@ -233,7 +233,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img02">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img08.png" alt="img02">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$525.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
@@ -255,7 +255,7 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img03">
+              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img09.png" alt="img03">
               <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$600.000.000</p></a>
               <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
@@ -394,6 +394,31 @@
         <p class="h4 text-white">Llena este corto formulario <br>y un asesor comercial te <br>contactará pronto.</p>
       </div>
       <img class="img-fluid w-100" src="<?php echo $base_url ?>/assets/Home/Chica.png" alt="Chica">
+    </div>
+    <div class="col">
+      <div class="jumbotron contactoForm px-5 pb-5 pt-4 rounded-0">
+        <form>
+          <h2 class="color-FormBlue m-0 pt-2">CONTACTO</h2>
+          <hr class="FormLine mt-0 mb-3">
+          <div class="form-group">
+            <label class="m-0" for="Name">NOMBRE*</label>
+            <input type="text" class="form-control rounded-0" id="Name" placeholder="Escribe tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label class="m-0" for="Email">EMAIL*</label>
+            <input type="email" class="form-control rounded-0" id="Email" placeholder="Escribe tu email" required>
+          </div>
+          <div class="form-group">
+            <label class="m-0" for="Phone">TELÉFONO*</label>
+            <input type="text" class="form-control rounded-0" id="Phone" placeholder="Escribe tu teléfono" required>
+          </div>
+          <div class="form-group">
+            <label class="m-0" for="Mensaje">MENSAJE</label>
+            <textarea class="form-control rounded-0" id="Mensaje" rows="3" placeholder="Deja aquí tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 rounded-0 py-2">ENVIAR</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>

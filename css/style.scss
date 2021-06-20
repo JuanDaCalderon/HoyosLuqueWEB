@@ -1,6 +1,7 @@
 $MainBlue: #0060a2;
 $SecondBlue: #4f76b0;
 $MenuTitleTextBlue: #00354c;
+$FormBlue: #394d7c;
 
 $icomoon-font-family: "IconosHL" !default;
 $icomoon-font-path: "../assets/fonts" !default;
@@ -75,6 +76,9 @@ i {
 }
 .color-primary {
   color: $MainBlue !important;
+}
+.color-FormBlue {
+  color: $FormBlue !important;
 }
 body {
   font-family: $FuenteMontserrat;
@@ -290,6 +294,34 @@ section.Formulario {
       text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
     }
   }
+  div.contactoForm {
+    margin-top: 8em;
+    margin-right: 16em;
+    margin-left: -10em;
+    background-color: white;
+    h2 {
+      font-size: 5em;
+    }
+    label {
+      font-family: $FuenteBebas;
+      color: $FormBlue;
+    }
+    button {
+      font-size: 1.3em;
+      font-weight: map-get($FontWeights, w600);
+      background-color: $MainBlue;
+      border-color: $MainBlue;
+      &:hover {
+        background-color: rgb(0, 77, 128);
+        border-color: rgb(0, 77, 128);
+      }
+    }
+    hr {
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: none;
+    }
+  }
 }
 /* SECTION MAP */
 section.Map {
@@ -315,6 +347,11 @@ section.Map {
     &:hover {
       background-color: #004d80;
       border-color: #004d80;
+    }
+  }
+  a.redIcon {
+    &:hover {
+      font-size: 2em;
     }
   }
 }

@@ -37,6 +37,10 @@ i {
   color: #0060a2 !important;
 }
 
+.color-FormBlue {
+  color: #394d7c !important;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -278,6 +282,40 @@ section.Formulario div.Caption p {
   text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+section.Formulario div.contactoForm {
+  margin-top: 8em;
+  margin-right: 16em;
+  margin-left: -10em;
+  background-color: white;
+}
+
+section.Formulario div.contactoForm h2 {
+  font-size: 5em;
+}
+
+section.Formulario div.contactoForm label {
+  font-family: "Bebas Neue", cursive;
+  color: #394d7c;
+}
+
+section.Formulario div.contactoForm button {
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.Formulario div.contactoForm button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
+}
+
+section.Formulario div.contactoForm hr {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
 /* SECTION MAP */
 section.Map div.caption h2 {
   font-size: 3.5em;
@@ -302,6 +340,10 @@ section.Map button {
 section.Map button:hover {
   background-color: #004d80;
   border-color: #004d80;
+}
+
+section.Map a.redIcon:hover {
+  font-size: 2em;
 }
 
 /* FOOTER STYLES */
