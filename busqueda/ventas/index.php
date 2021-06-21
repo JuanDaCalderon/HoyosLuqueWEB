@@ -1,6 +1,7 @@
 <?php 
     require_once '../../includes/header.php';
 ?>
+
 <section class="coverInternas">
     <div class="wrap w-100 h-100 p-5 d-flex flex-column justify-content-end align-items-center">
         <h1 class="text-white text-center m-0 pt-5">BUSQUEDA</h1>
