@@ -8,13 +8,62 @@
     </div>
 </section>
 
-<section class="busqueda main">
+<section class="busqueda main pt-5 mt-3 px-6">
     <div class="container-fluid">
         <div class="row buscador">
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-11 pl-0">
                 <form class="Buscador bg-white p-4">
-                    <div class="row justify-content-between px-4">
-                    <div class="col-md-3 p-0">
+                  <div class="row justify-content-between px-4">
+                    <div class="col-md-2 px-0 pr-md-2 pl-md-0">
+                        <label class="mb-0" for="Ciudad">CIUDAD</label>
+                        <select class="form-control rounded-0" id="Ciudad">
+                            <option selected disabled>Todos</option>
+                            <option>Bogota</option>
+                            <option>Medellin</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="Barrio">BARRIO</label>
+                        <select class="form-control rounded-0" id="Barrio">
+                            <option selected disabled>Todos</option>
+                            <option>Chicó Navarra</option>
+                            <option>San Patricio</option>
+                            <option>Santa Barbara</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="Estrato">ESTRATO</label>
+                        <select class="form-control rounded-0" id="Estrato">
+                            <option selected disabled>Todos</option>
+                            <option>6</option>
+                            <option>5</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="PrecioDesde">PRECIO DESDE</label>
+                        <select class="form-control rounded-0" id="PrecioDesde">
+                            <option selected disabled>Todos</option>
+                            <option>100.000.000</option>
+                            <option>250.000.000</option>
+                            <option>500.000.000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="PrecioHasta">PRECIO HASTA</label>
+                        <select class="form-control rounded-0" id="PrecioHasta">
+                            <option selected disabled>Todos</option>
+                            <option>800.000.000</option>
+                            <option>950.000.000</option>
+                            <option>1.000.000.000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-lg-2 px-0 pl-md-2 pr-md-0">
+                        <label class="mb-0" for="Codigo">CÓDIGO</label>
+                        <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
+                    </div>
+                    <hr class="w-100 my-0 my-md-2 bg-white border-white">
+                    <div class="col-md-2 px-0 pr-md-2 pl-md-0 d-none d-md-block">
                         <label class="mb-0" for="Modalidad">MODALIDAD</label>
                         <select class="form-control rounded-0" id="Modalidad">
                             <option selected disabled>Todos</option>
@@ -22,26 +71,46 @@
                             <option>Arriendo</option>
                         </select>
                     </div>
-                    <div class="col-md-3 p-0">
+                    <div class="col-md-2 px-0 px-md-2">
                         <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
                         <select class="form-control rounded-0" id="TipoInmueble">
                             <option selected disabled>Todos</option>
-                            <option>Apartamento</option>
                             <option>Casa</option>
+                            <option>Apartamento</option>
                             <option>Local</option>
                         </select>
                     </div>
-                    <div class="col-md-3 col-lg-2 p-0">
-                        <label class="mb-0" for="Codigo">CÓDIGO</label>
-                        <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="NumHabitaciones">Numero de habitaciones</label>
+                        <select class="form-control rounded-0" id="NumHabitaciones">
+                            <option selected disabled>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
                     </div>
-                    <div class="col-md-3 d-flex flex-row justify-content-start align-items-end mt-4 mt-md-0 p-0">
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="NumBaños">Numero de Baños</label>
+                        <select class="form-control rounded-0" id="NumBaños">
+                            <option selected disabled>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 px-0 px-md-2">
+                        <label class="mb-0" for="NumParqueaderos">Numero de Parqueaderos</label>
+                        <select class="form-control rounded-0" id="NumParqueaderos">
+                            <option selected disabled>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex flex-row justify-content-start align-items-end mt-4 mt-md-0 px-0 pl-md-2 pr-md-0">
                         <button type="submit" class="btn btn-primary w-100 rounded-0 font-weight-bold">BUSCAR</button>
                     </div>
-                    </div>
+                  </div>
                 </form>
             </div>
-            <div class="col-12 col-md-2 d-flex justify-content-end align-items-end">
+            <div class="col-12 col-md-1 d-flex justify-content-end align-items-end">
                 <p>1-9 de <span class="font-weight-bold">120</span></p>
             </div>
         </div>
@@ -285,6 +354,19 @@
             </div>
           </div>
         </div>
+        <nav aria-label="Page navigation resultados">
+          <ul class="pagination justify-content-center mt-4">
+            <li class="page-item px-1 disabled">
+              <a class="page-link " href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item px-1 active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item px-1"><a class="page-link" href="#">2</a></li>
+            <li class="page-item px-1"><a class="page-link" href="#">3</a></li>
+            <li class="page-item px-1">
+              <a class="page-link" href="#">Siguiente</a>
+            </li>
+          </ul>
+        </nav>
 </section>
 
 <?php 

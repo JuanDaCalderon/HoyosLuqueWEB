@@ -60,8 +60,7 @@ header.NavBar a.Logo {
 }
 
 header.NavBar nav.navbar {
-  -webkit-box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
 }
 
 header.NavBar ul.navbar-nav a {
@@ -80,8 +79,7 @@ header.NavBar li.nav-item.active a {
 
 header.NavBar div.ServiciosDropDown {
   border: none;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   border-radius: 0px;
 }
 
@@ -91,8 +89,7 @@ header.NavBar div.ServiciosDropDown hr {
 
 @media (max-width: 1200px) {
   header.NavBar div.ServiciosDropDown {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -194,7 +191,6 @@ section.destacados a.btn-primary {
 }
 
 section.destacados a.btn-primary:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(60%, rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
@@ -266,7 +262,6 @@ a.btn-floating {
   top: -40px;
   right: 0px;
   background-color: #0060a2;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -302,7 +297,6 @@ div.h-7em {
 
 /* SECTION FORMULARIO */
 section.Formulario {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0060a2), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to bottom, #0060a2, rgba(255, 255, 255, 0));
 }
 
@@ -396,7 +390,6 @@ section.coverInternas {
 }
 
 section.coverInternas div.wrap {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(#101831));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
 }
 
@@ -413,8 +406,22 @@ section.coverInternas div.wrap p {
 
 /* Barra de busqueda (BUSCADOR) */
 section.busqueda.main div.row.buscador form.Buscador {
-  -webkit-box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+}
+
+section.busqueda.main div.row.buscador form.Buscador label {
+  font-family: "Bebas Neue", cursive;
+  color: #394d7c;
+}
+
+section.busqueda.main div.row.buscador form.Buscador button {
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.busqueda.main div.row.buscador form.Buscador button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
 }
 
 section.busqueda.main div.row.buscador p {
@@ -452,7 +459,6 @@ section.resultados a.btn-primary {
 }
 
 section.resultados a.btn-primary:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(60%, rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
@@ -504,5 +510,25 @@ section.resultados .card .card-body div.customtext p.Icons i {
 
 section.resultados .card .card-body div.customtext p {
   font-size: 1.2em;
+}
+
+section.resultados nav ul li.active a {
+  background-color: #4f76b0 !important;
+  color: white !important;
+}
+
+section.resultados nav ul a.page-link {
+  border-radius: 10px;
+  border: none;
+  text-shadow: none;
+  font-family: "Bebas Neue", cursive !important;
+  color: #939393;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+section.resultados nav ul a.page-link:hover {
+  background-color: #4f76b0;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
