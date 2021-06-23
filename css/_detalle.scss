@@ -1,0 +1,139 @@
+section.MainDetalle {
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+  div.row {
+    div.detail {
+      height: 150px;
+    }
+    div.separador {
+      width: 3px;
+      height: 75%;
+      background-color: $SecondBlue;
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+    h1 {
+      color: $MainBlue;
+      font-size: 4em;
+      text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+      &.price {
+        font-size: 6em;
+      }
+    }
+    h2 {
+      margin-top: -0.3em !important;
+      color: $SecondBlue;
+      font-size: 2.5em;
+      text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 1.8em;
+      text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+      &.text {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+section.ubicacion {
+  h2 {
+    color: $MainBlue;
+    font-size: 4em;
+  }
+  hr.Barra {
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  iframe {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+section.Detalle {
+  li {
+    font-size: 18px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    list-style-type: square;
+    list-style-image: url(../assets/Bullet.jpg);
+  }
+  img.icon {
+    height: 100%;
+  }
+  p {
+    font-size: 18px;
+    &.asesor {
+      font-size: 1em;
+    }
+  }
+  h2 {
+    color: $MainBlue;
+    font-size: 2.5em;
+  }
+  h3 {
+    margin-bottom: -0.3em !important;
+    color: $MainBlue;
+    font-size: 4em;
+  }
+  h4 {
+    margin-bottom: -0.3em !important;
+    color: $MainBlue;
+    font-size: 3em;
+    &.asesor {
+      font-size: 2.5em;
+    }
+  }
+  h5 {
+    color: $MainBlue;
+    font-size: 2em;
+  }
+  hr.Barra {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin-bottom: 1.5rem;
+    &.caracteristica {
+      margin-bottom: 1rem;
+    }
+  }
+  button {
+    background-color: $MainBlue;
+    border-color: $MainBlue;
+    &:hover {
+      background-color: rgb(0, 77, 128);
+      border-color: rgb(0, 77, 128);
+    }
+  }
+  div.ListaCaracteristicas {
+    p,
+    span {
+      font-size: 16px;
+      display: inline-block;
+    }
+  }
+}
+section.galeria {
+  .controls-top {
+    text-align: right;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    left: 0px;
+  }
+  a.btn-floating {
+    position: relative;
+    top: 0px;
+    &.prev {
+      right: 0px;
+    }
+    &.next {
+      left: 0px;
+    }
+  }
+}

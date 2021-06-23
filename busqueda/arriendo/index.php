@@ -123,8 +123,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
@@ -149,8 +149,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>CASA En sector norte DE BOGOTÁ</h2>
@@ -175,8 +175,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
@@ -201,8 +201,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
@@ -227,8 +227,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>CASA En sector norte DE BOGOTÁ</h2>
@@ -253,9 +253,9 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <div class="card-body px-3 row"></div>
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
                 </div>
@@ -279,8 +279,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
@@ -305,8 +305,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>CASA En sector norte DE BOGOTÁ</h2>
@@ -331,8 +331,8 @@
           <div class="col-12 col-md-4 pt-3">
             <div class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
+              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
@@ -369,6 +369,7 @@
           </ul>
         </nav>
 </section>
+
 <?php 
     require_once '../../includes/footer.php';
 ?>

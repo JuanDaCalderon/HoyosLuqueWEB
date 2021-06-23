@@ -49,7 +49,8 @@ body {
 h1,
 h2,
 h3,
-h4.h5,
+h4,
+h5,
 h6 {
   font-family: "Bebas Neue", cursive;
 }
@@ -60,7 +61,7 @@ header.NavBar a.Logo {
 }
 
 header.NavBar nav.navbar {
-  box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 50px 10px rgba(0, 0, 0, 0.2);
 }
 
 header.NavBar ul.navbar-nav a {
@@ -530,5 +531,161 @@ section.resultados nav ul a.page-link {
 section.resultados nav ul a.page-link:hover {
   background-color: #4f76b0;
   color: white;
+}
+
+section.MainDetalle {
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+}
+
+section.MainDetalle div.row div.detail {
+  height: 150px;
+}
+
+section.MainDetalle div.row div.separador {
+  width: 3px;
+  height: 75%;
+  background-color: #4f76b0;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+section.MainDetalle div.row h1 {
+  color: #0060a2;
+  font-size: 4em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.MainDetalle div.row h1.price {
+  font-size: 6em;
+}
+
+section.MainDetalle div.row h2 {
+  margin-top: -0.3em !important;
+  color: #4f76b0;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.MainDetalle div.row p {
+  font-size: 1.8em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.MainDetalle div.row p.text {
+  font-size: 1.6em;
+}
+
+section.ubicacion h2 {
+  color: #0060a2;
+  font-size: 4em;
+}
+
+section.ubicacion hr.Barra {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.ubicacion iframe {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+section.Detalle li {
+  font-size: 18px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  list-style-type: square;
+  list-style-image: url(../assets/Bullet.jpg);
+}
+
+section.Detalle img.icon {
+  height: 100%;
+}
+
+section.Detalle p {
+  font-size: 18px;
+}
+
+section.Detalle p.asesor {
+  font-size: 1em;
+}
+
+section.Detalle h2 {
+  color: #0060a2;
+  font-size: 2.5em;
+}
+
+section.Detalle h3 {
+  margin-bottom: -0.3em !important;
+  color: #0060a2;
+  font-size: 4em;
+}
+
+section.Detalle h4 {
+  margin-bottom: -0.3em !important;
+  color: #0060a2;
+  font-size: 3em;
+}
+
+section.Detalle h4.asesor {
+  font-size: 2.5em;
+}
+
+section.Detalle h5 {
+  color: #0060a2;
+  font-size: 2em;
+}
+
+section.Detalle hr.Barra {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.Detalle hr.Barra.caracteristica {
+  margin-bottom: 1rem;
+}
+
+section.Detalle button {
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.Detalle button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
+}
+
+section.Detalle div.ListaCaracteristicas p,
+section.Detalle div.ListaCaracteristicas span {
+  font-size: 16px;
+  display: inline-block;
+}
+
+section.galeria .controls-top {
+  text-align: right;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  left: 0px;
+}
+
+section.galeria a.btn-floating {
+  position: relative;
+  top: 0px;
+}
+
+section.galeria a.btn-floating.prev {
+  right: 0px;
+}
+
+section.galeria a.btn-floating.next {
+  left: 0px;
 }
 /*# sourceMappingURL=style.css.map */
