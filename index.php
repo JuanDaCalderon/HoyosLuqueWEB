@@ -386,7 +386,7 @@
   <img class="img-fluid w-100" src="<?php echo $base_url ?>/assets/Home/LasBoxes.jpg" alt="Banner Las Boxes">
 </section>
 
-<section class="Formulario m-0">
+<section id="Contacto" class="Formulario m-0">
   <div class="row m-0">
     <div class="col-auto pl-0">
       <div class="Caption position-absolute">
