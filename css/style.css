@@ -211,8 +211,8 @@ section.main.cover form.HomeBuscador button:hover {
 
 /* CRRUSEL STYLES */
 .px-6 {
-  padding-left: 6.5rem !important;
-  padding-right: 6.5rem !important;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
 }
 
 section.destacados h2 {
@@ -233,10 +233,9 @@ section.destacados a.btn-primary {
   position: absolute;
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
-  bottom: 15px;
+  bottom: 0px;
   right: 0px;
   border: none;
-  line-height: 645px;
 }
 
 section.destacados a.btn-primary:hover {
@@ -255,10 +254,9 @@ section.destacados a.btn-secundary {
   position: absolute;
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
-  bottom: 15px;
-  right: 0;
+  bottom: 0px;
+  right: 0px;
   border: none;
-  line-height: 645px;
 }
 
 section.destacados a.btn-secundary:hover {
@@ -443,16 +441,14 @@ section.Map a.redIcon:hover {
   }
   section.destacados a.btn-primary {
     font-size: 2.2em;
-    bottom: 15px;
+    bottom: 0px;
     right: 0px;
     border: none;
-    line-height: 500px;
   }
   section.destacados a.btn-secundary {
     font-size: 2.2em;
-    bottom: 15px;
+    bottom: 0px;
     right: 0;
-    line-height: 500px;
   }
   section.destacados .card-body div.customtext p.Icons {
     font-size: 1em;
@@ -463,54 +459,6 @@ section.Map a.redIcon:hover {
   }
   section.destacados .card-body div.customtext p {
     font-size: 1em;
-  }
-  .card {
-    border: none;
-    border-radius: 0;
-  }
-  .controls-top {
-    text-align: right;
-    position: relative;
-    top: 0px;
-    z-index: 2;
-    left: 0px;
-  }
-  a.btn-floating {
-    color: white;
-    border: solid 2px white;
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    line-height: 28px;
-    border-radius: 21px;
-    font-size: 27px;
-    position: absolute;
-    top: -40px;
-    right: 0px;
-    background-color: #0060a2;
-    transition: all 0.3s;
-  }
-  a.btn-floating:hover {
-    background-color: white;
-    color: grey;
-    text-decoration: none;
-  }
-  a.btn-floating.prev {
-    right: 40px;
-    text-indent: -2px;
-  }
-  a.btn-floating.next {
-    text-indent: 2px;
-  }
-  ol.carousel-indicators.destacados {
-    bottom: -70px;
-  }
-  ol.carousel-indicators.destacados li {
-    width: 25px;
-    height: 25px;
-    margin: 0px 10px;
-    background-color: #4f76b0;
   }
   div.h-7em {
     height: 9em;
@@ -534,6 +482,41 @@ section.Map a.redIcon:hover {
 
 /* 1200px */
 @media (max-width: 1200px) {
+  /* DESTACADOS SECTION */
+  section.destacados h2 {
+    font-size: 4.5em;
+  }
+  section.destacados h3 {
+    font-size: 1.5em;
+  }
+  section.destacados hr.Barra {
+    height: 3px;
+    margin-bottom: 1.5rem;
+  }
+  section.destacados a.btn-primary {
+    font-size: 2.2em;
+    bottom: 0px;
+    right: 0px;
+    border: none;
+  }
+  section.destacados a.btn-secundary {
+    font-size: 2.2em;
+    bottom: 0px;
+    right: 0;
+  }
+  section.destacados .card-body div.customtext p.Icons {
+    font-size: 1em;
+  }
+  section.destacados .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.destacados .card-body div.customtext p {
+    font-size: 1em;
+  }
+  div.h-7em {
+    height: 100%;
+  }
   /* MAIN COVER STYLES */
   section.main.cover h1 {
     font-size: 5.5em;
@@ -583,6 +566,10 @@ section.Map a.redIcon:hover {
 
 /* 992px */
 @media (max-width: 992px) {
+  section.destacados.px-6 {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
   section.Map div.jumbotron.texthash {
     width: 80% !important;
   }
@@ -602,6 +589,36 @@ section.Map a.redIcon:hover {
 
 /* 768px */
 @media (max-width: 768px) {
+  section.destacados h2 {
+    font-size: 3.5em;
+  }
+  section.destacados h3 {
+    font-size: 2em;
+  }
+  section.destacados hr.Barra {
+    height: 3px;
+    margin-bottom: 1.5rem;
+  }
+  section.destacados a.btn-primary {
+    font-size: 3.2em !important;
+  }
+  section.destacados a.btn-secundary {
+    font-size: 3.2em !important;
+  }
+  section.destacados .card-body div.customtext p.Icons {
+    font-size: 1em;
+  }
+  section.destacados .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.destacados .card-body div.customtext p {
+    font-size: 1em;
+  }
+  section.destacados.px-6 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
   /* MAIN COVER STYLES */
   section.main.cover h1 {
     font-size: 4.5em;
@@ -627,6 +644,32 @@ section.Map a.redIcon:hover {
 
 /* 576px */
 @media (max-width: 576px) {
+  section.destacados h2 {
+    font-size: 2.5em;
+  }
+  section.destacados h3 {
+    font-size: 1.5em;
+  }
+  section.destacados a.btn-primary {
+    font-size: 2em !important;
+  }
+  section.destacados a.btn-secundary {
+    font-size: 2em !important;
+  }
+  section.destacados .card-body div.customtext p.Icons {
+    font-size: 0.8em;
+  }
+  section.destacados .card-body div.customtext p.Icons i {
+    font-size: 0.8em;
+    padding: 0px 9px;
+  }
+  section.destacados .card-body div.customtext p {
+    font-size: 0.8em;
+  }
+  section.destacados.px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
   /* MAIN COVER STYLES */
   section.main.cover {
     height: 800px !important;
@@ -663,6 +706,34 @@ section.Map a.redIcon:hover {
   section.Map div.direccion h3,
   section.Map div.direccion p {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 380px) {
+  section.destacados h2 {
+    font-size: 2.5em;
+  }
+  section.destacados h3 {
+    font-size: 1em;
+  }
+  section.destacados a.btn-primary {
+    font-size: 2em !important;
+  }
+  section.destacados a.btn-secundary {
+    font-size: 2em !important;
+  }
+  section.destacados .card-body p {
+    font-size: 0.9em;
+  }
+  section.destacados .card-body div.customtext p.Icons {
+    font-size: 0.8em;
+  }
+  section.destacados .card-body div.customtext p.Icons i {
+    font-size: 0.8em;
+    padding: 0px 9px;
+  }
+  section.destacados .card-body div.customtext p {
+    font-size: 0.8em;
   }
 }
 

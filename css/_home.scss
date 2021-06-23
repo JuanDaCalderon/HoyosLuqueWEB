@@ -42,8 +42,8 @@ section.main.cover {
 
 /* CRRUSEL STYLES */
 .px-6 {
-  padding-left: 6.5rem !important;
-  padding-right: 6.5rem !important;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
 }
 section.destacados {
   h2 {
@@ -62,10 +62,9 @@ section.destacados {
     position: absolute;
     font-family: $FuenteBebas;
     background-color: transparent;
-    bottom: 15px;
+    bottom: 0px;
     right: 0px;
     border: none;
-    line-height: 645px;
     &:hover {
       background-image: linear-gradient(
         to bottom,
@@ -86,10 +85,9 @@ section.destacados {
     position: absolute;
     font-family: $FuenteBebas;
     background-color: transparent;
-    bottom: 15px;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
     border: none;
-    line-height: 645px;
     &:hover {
       background-color: transparent;
     }
@@ -264,16 +262,14 @@ section.Map {
     }
     a.btn-primary {
       font-size: 2.2em;
-      bottom: 15px;
+      bottom: 0px;
       right: 0px;
       border: none;
-      line-height: 500px;
     }
     a.btn-secundary {
       font-size: 2.2em;
-      bottom: 15px;
+      bottom: 0px;
       right: 0;
-      line-height: 500px;
     }
     .card-body {
       div.customtext {
@@ -288,54 +284,6 @@ section.Map {
           font-size: 1em;
         }
       }
-    }
-  }
-  .card {
-    border: none;
-    border-radius: 0;
-  }
-  .controls-top {
-    text-align: right;
-    position: relative;
-    top: 0px;
-    z-index: 2;
-    left: 0px;
-  }
-  a.btn-floating {
-    color: white;
-    border: solid 2px white;
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    line-height: 28px;
-    border-radius: 21px;
-    font-size: 27px;
-    position: absolute;
-    top: -40px;
-    right: 0px;
-    background-color: $MainBlue;
-    transition: all 0.3s;
-    &:hover {
-      background-color: white;
-      color: grey;
-      text-decoration: none;
-    }
-  }
-  a.btn-floating.prev {
-    right: 40px;
-    text-indent: -2px;
-  }
-  a.btn-floating.next {
-    text-indent: 2px;
-  }
-  ol.carousel-indicators.destacados {
-    bottom: -70px;
-    li {
-      width: 25px;
-      height: 25px;
-      margin: 0px 10px;
-      background-color: $SecondBlue;
     }
   }
   div.h-7em {
@@ -364,6 +312,47 @@ section.Map {
 @media (min-width: $BreakPointExtraLarge) {
 }
 @media (max-width: $BreakPointExtraLarge) {
+  /* DESTACADOS SECTION */
+  section.destacados {
+    h2 {
+      font-size: 4.5em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    hr.Barra {
+      height: 3px;
+      margin-bottom: 1.5rem;
+    }
+    a.btn-primary {
+      font-size: 2.2em;
+      bottom: 0px;
+      right: 0px;
+      border: none;
+    }
+    a.btn-secundary {
+      font-size: 2.2em;
+      bottom: 0px;
+      right: 0;
+    }
+    .card-body {
+      div.customtext {
+        p.Icons {
+          font-size: 1em;
+          i {
+            font-size: 1em;
+            padding: 0px 9px;
+          }
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  div.h-7em {
+    height: 100%;
+  }
   /* MAIN COVER STYLES */
   section.main.cover {
     h1 {
@@ -422,6 +411,10 @@ section.Map {
 @media (min-width: $BreakPointLarge) {
 }
 @media (max-width: $BreakPointLarge) {
+  section.destacados.px-6 {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
   section.Map {
     div.jumbotron.texthash {
       width: 80% !important;
@@ -448,6 +441,42 @@ section.Map {
 @media (min-width: $BreakPointMedium) {
 }
 @media (max-width: $BreakPointMedium) {
+  section.destacados {
+    h2 {
+      font-size: 3.5em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+    hr.Barra {
+      height: 3px;
+      margin-bottom: 1.5rem;
+    }
+    a.btn-primary {
+      font-size: 3.2em !important;
+    }
+    a.btn-secundary {
+      font-size: 3.2em !important;
+    }
+    .card-body {
+      div.customtext {
+        p.Icons {
+          font-size: 1em;
+          i {
+            font-size: 1em;
+            padding: 0px 9px;
+          }
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  section.destacados.px-6 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
   /* MAIN COVER STYLES */
   section.main.cover {
     h1 {
@@ -480,6 +509,38 @@ section.Map {
 @media (min-width: $BreakPointSmall) {
 }
 @media (max-width: $BreakPointSmall) {
+  section.destacados {
+    h2 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    a.btn-primary {
+      font-size: 2em !important;
+    }
+    a.btn-secundary {
+      font-size: 2em !important;
+    }
+    .card-body {
+      div.customtext {
+        p.Icons {
+          font-size: 0.8em;
+          i {
+            font-size: 0.8em;
+            padding: 0px 9px;
+          }
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  section.destacados.px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
   /* MAIN COVER STYLES */
   section.main.cover {
     height: 800px !important;
@@ -526,6 +587,40 @@ section.Map {
       h3,
       p {
         font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  section.destacados {
+    h2 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 1em;
+    }
+    a.btn-primary {
+      font-size: 2em !important;
+    }
+    a.btn-secundary {
+      font-size: 2em !important;
+    }
+    .card-body {
+      p {
+        font-size: 0.9em;
+      }
+      div.customtext {
+        p.Icons {
+          font-size: 0.8em;
+          i {
+            font-size: 0.8em;
+            padding: 0px 9px;
+          }
+        }
+        p {
+          font-size: 0.8em;
+        }
       }
     }
   }
