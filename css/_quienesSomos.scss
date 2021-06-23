@@ -1,0 +1,29 @@
+section.coverInternas {
+  background-image: url(../assets/Banners/QuienesSomos.jpg);
+  background-position-y: -238px;
+}
+
+section.info {
+  p {
+    font-size: 18px;
+  }
+}
+section.bannerAzul {
+  height: 250px;
+  background-color: $MainBlue;
+  h2 {
+    margin: 0;
+    font-size: 5.5em;
+    color: white;
+  }
+}
+
+section.features {
+  h3 {
+    font-size: 2em;
+    color: $FormBlue;
+  }
+  p {
+    font-size: 18px;
+  }
+}

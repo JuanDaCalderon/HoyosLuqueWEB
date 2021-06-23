@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse pr-5" id="MainNavBar">
                     <ul class="navbar-nav ml-auto">
                         <li class="mx-4 nav-item active">
-                            <a class="nav-link" href="<?php echo $base_url?>/QuienesSomos">QUIÉNES SOMOS</a>
+                            <a class="nav-link" href="<?php echo $base_url?>/quienes-somos">QUIÉNES SOMOS</a>
                         </li>
                         <li class="mx-4 nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>

@@ -91,3 +91,13 @@ h5,
 h6 {
   font-family: $FuenteBebas;
 }
+
+html {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $FormBlue;
+    border-radius: 5px;
+  }
+}

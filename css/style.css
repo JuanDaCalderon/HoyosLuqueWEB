@@ -55,6 +55,15 @@ h6 {
   font-family: "Bebas Neue", cursive;
 }
 
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #394d7c;
+  border-radius: 5px;
+}
+
 /* HEADER NAVBAR STYLES*/
 header.NavBar a.Logo {
   width: 11%;
@@ -687,5 +696,34 @@ section.galeria a.btn-floating.prev {
 
 section.galeria a.btn-floating.next {
   left: 0px;
+}
+
+section.coverInternas {
+  background-image: url(../assets/Banners/QuienesSomos.jpg);
+  background-position-y: -238px;
+}
+
+section.info p {
+  font-size: 18px;
+}
+
+section.bannerAzul {
+  height: 250px;
+  background-color: #0060a2;
+}
+
+section.bannerAzul h2 {
+  margin: 0;
+  font-size: 5.5em;
+  color: white;
+}
+
+section.features h3 {
+  font-size: 2em;
+  color: #394d7c;
+}
+
+section.features p {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

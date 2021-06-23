@@ -255,7 +255,7 @@
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
               <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
               <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row"></div>
+              <div class="card-body px-3 row">
                 <div class="col-12 color-primary">
                   <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
                 </div>
