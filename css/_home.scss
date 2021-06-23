@@ -62,8 +62,8 @@ section.destacados {
     position: absolute;
     font-family: $FuenteBebas;
     background-color: transparent;
-    bottom: 0px;
-    right: 0;
+    bottom: 15px;
+    right: 0px;
     border: none;
     line-height: 645px;
     &:hover {
@@ -86,7 +86,7 @@ section.destacados {
     position: absolute;
     font-family: $FuenteBebas;
     background-color: transparent;
-    bottom: 0px;
+    bottom: 15px;
     right: 0;
     border: none;
     line-height: 645px;
@@ -245,6 +245,288 @@ section.Map {
   a.redIcon {
     &:hover {
       font-size: 2em;
+    }
+  }
+}
+
+@media (max-width: 1630px) {
+  /* DESTACADOS SECTION */
+  section.destacados {
+    h2 {
+      font-size: 4.5em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    hr.Barra {
+      height: 3px;
+      margin-bottom: 1.5rem;
+    }
+    a.btn-primary {
+      font-size: 2.2em;
+      bottom: 15px;
+      right: 0px;
+      border: none;
+      line-height: 500px;
+    }
+    a.btn-secundary {
+      font-size: 2.2em;
+      bottom: 15px;
+      right: 0;
+      line-height: 500px;
+    }
+    .card-body {
+      div.customtext {
+        p.Icons {
+          font-size: 1em;
+          i {
+            font-size: 1em;
+            padding: 0px 9px;
+          }
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .card {
+    border: none;
+    border-radius: 0;
+  }
+  .controls-top {
+    text-align: right;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    left: 0px;
+  }
+  a.btn-floating {
+    color: white;
+    border: solid 2px white;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 21px;
+    font-size: 27px;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background-color: $MainBlue;
+    transition: all 0.3s;
+    &:hover {
+      background-color: white;
+      color: grey;
+      text-decoration: none;
+    }
+  }
+  a.btn-floating.prev {
+    right: 40px;
+    text-indent: -2px;
+  }
+  a.btn-floating.next {
+    text-indent: 2px;
+  }
+  ol.carousel-indicators.destacados {
+    bottom: -70px;
+    li {
+      width: 25px;
+      height: 25px;
+      margin: 0px 10px;
+      background-color: $SecondBlue;
+    }
+  }
+  div.h-7em {
+    height: 9em;
+  }
+  /* FORMULARIO SECTION */
+  section.Formulario {
+    div.contactoForm {
+      margin-right: 1em;
+      margin-left: -22em;
+    }
+    div.Caption {
+      top: 130px;
+      left: 430px;
+      h3 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+/* 1200px */
+@media (min-width: $BreakPointExtraLarge) {
+}
+@media (max-width: $BreakPointExtraLarge) {
+  /* MAIN COVER STYLES */
+  section.main.cover {
+    h1 {
+      font-size: 5.5em;
+      bottom: 125px;
+      left: 100px;
+    }
+    form.HomeBuscador {
+      width: 80%;
+      bottom: 325px;
+      left: 100px;
+      label {
+        font-size: 1.2em;
+      }
+      input,
+      select {
+        min-height: 35px;
+      }
+    }
+  }
+  /* FORMULARIO SECTION */
+  section.Formulario {
+    div.contactoForm {
+      margin-top: 2em;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    div.Caption {
+      text-align: center;
+      position: relative !important;
+      top: 0px;
+      left: 0px;
+      h3 {
+        font-size: 4em;
+      }
+      p {
+        font-size: 2em;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+  section.Map {
+    div.jumbotron.texthash {
+      width: 75% !important;
+    }
+    div.caption {
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+/* 992px */
+@media (min-width: $BreakPointLarge) {
+}
+@media (max-width: $BreakPointLarge) {
+  section.Map {
+    div.jumbotron.texthash {
+      width: 80% !important;
+    }
+    div.caption {
+      h2 {
+        text-align: center;
+        font-size: 3.5em;
+      }
+    }
+    a.redIcon {
+      &:hover {
+        font-size: 2em;
+      }
+    }
+    img.mapa {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+}
+/* 768px */
+@media (min-width: $BreakPointMedium) {
+}
+@media (max-width: $BreakPointMedium) {
+  /* MAIN COVER STYLES */
+  section.main.cover {
+    h1 {
+      font-size: 4.5em;
+      bottom: 75px;
+      left: 65px;
+    }
+    form.HomeBuscador {
+      width: 80%;
+      bottom: 235px;
+      left: 65px;
+      label {
+        font-size: 1.2em;
+      }
+    }
+  }
+  /* MAP SECTION */
+  section.Map {
+    div.jumbotron.texthash {
+      width: 85% !important;
+    }
+    div.caption {
+      h2 {
+        font-size: 2.8em;
+      }
+    }
+  }
+}
+/* 576px */
+@media (min-width: $BreakPointSmall) {
+}
+@media (max-width: $BreakPointSmall) {
+  /* MAIN COVER STYLES */
+  section.main.cover {
+    height: 800px !important;
+    h1 {
+      margin-bottom: 0px;
+      font-size: 2.8em;
+      bottom: 135px;
+      left: 38px;
+    }
+    form.HomeBuscador {
+      width: 80%;
+      bottom: 235px;
+      left: 38px;
+      label {
+        font-size: 1.2em;
+      }
+    }
+  }
+  section.Formulario {
+    div.Caption {
+      h3 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    div.contactoForm {
+      h2 {
+        font-size: 3.5em;
+      }
+    }
+  }
+  section.Map {
+    div.jumbotron.texthash {
+      width: 85% !important;
+    }
+    div.caption {
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+    div.direccion {
+      h3,
+      p {
+        font-size: 1em;
+      }
     }
   }
 }

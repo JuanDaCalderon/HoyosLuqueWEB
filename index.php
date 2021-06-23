@@ -5,7 +5,7 @@
 <section class="main cover p-5" id="main-banner">
     <form class="HomeBuscador bg-white p-4">
         <div class="row justify-content-between px-4">
-          <div class="col-md-3 p-0">
+          <div class="col-lg-3 p-0">
             <label class="mb-0" for="Modalidad">MODALIDAD</label>
             <select class="form-control rounded-0" id="Modalidad">
                 <option selected disabled>Todos</option>
@@ -13,7 +13,7 @@
                 <option>Arriendo</option>
             </select>
           </div>
-          <div class="col-md-3 p-0">
+          <div class="col-lg-3 p-0">
             <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
             <select class="form-control rounded-0" id="TipoInmueble">
                 <option selected disabled>Todos</option>
@@ -22,11 +22,11 @@
                 <option>Local</option>
             </select>
           </div>
-          <div class="col-md-3 col-lg-2 p-0">
+          <div class="col-lg-2 p-0">
             <label class="mb-0" for="Codigo">CÓDIGO</label>
             <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
           </div>
-          <div class="col-md-3 d-flex flex-row justify-content-start align-items-end mt-4 mt-md-0 p-0">
+          <div class="col-lg-3 d-flex flex-row justify-content-start align-items-end mt-4 mt-lg-0 p-0">
             <button type="submit" class="btn btn-primary w-100 rounded-0 font-weight-bold">BUSCAR</button>
           </div>
         </div>
@@ -388,14 +388,14 @@
 
 <section id="Contacto" class="Formulario m-0">
   <div class="row m-0">
-    <div class="col-auto pl-0">
-      <div class="Caption position-absolute">
+    <div class="col-12 col-xl-auto px-0 pl-xl-0 pr-xl-0">
+      <div class="Caption position-absolute pt-4 pt-xl-0">
         <h3 class="text-white m-0">CONSIGNA TU INMUEBLE</h3>
         <p class="h4 text-white">Llena este corto formulario <br>y un asesor comercial te <br>contactará pronto.</p>
       </div>
       <img class="img-fluid w-100" src="<?php echo $base_url ?>/assets/Home/Chica.png" alt="Chica">
     </div>
-    <div class="col">
+    <div class="col-12 col-xl">
       <div class="jumbotron contactoForm px-5 pb-5 pt-4 rounded-0">
         <form>
           <h2 class="color-FormBlue m-0 pt-2">CONTACTO</h2>
@@ -423,10 +423,10 @@
   </div>
 </section>
 
-<section class="Map mx-0 mb-5 pb-5">
+<section class="Map mx-0 mb-0 mb-xl-5 pb-3 pb-md-5">
   <div class="row m-0">
-    <div class="col-12 col-lg-6">
-      <div class="jumbotron my-5 mr-auto ml-auto p-5 bg-white w-50">
+    <div class="col-12 col-lg-6 px-0 px-lg-2">
+      <div class="texthash jumbotron my-0 my-xl-5 mr-auto ml-auto p-0 px-xl-5 py-xl-5 bg-white w-50">
         <div class="caption">
           <h2 class="mb-3 pt-4">#SOMOSHOYOSLUQUE</h2>
           <p class="text-justify">Empresa inmobiliaria, dedicada a la gerencia de proyectos de construcción, administrar contratos de arriendo y comercialización de inmubles.</p>
@@ -475,8 +475,8 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6">
-      <img src="<?php echo $base_url ?>/assets/Home/Mapa.png" alt="Youtube">
+    <div class="col-12 col-lg-6 px-0 px-lg-2">
+      <img class="img-fluid mapa" src="<?php echo $base_url ?>/assets/Home/Mapa.png" alt="Youtube">
     </div>
   </div>
 </section>

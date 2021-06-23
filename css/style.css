@@ -97,9 +97,29 @@ header.NavBar div.ServiciosDropDown hr {
   background-color: rgba(79, 118, 176, 0.3);
 }
 
+/* 576px */
+/* 768px */
+@media (max-width: 768px) {
+  header.NavBar button.navbar-toggler {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  }
+  header.NavBar a.Logo {
+    width: 25%;
+  }
+}
+
+/* 992px */
+/* 1200px */
 @media (max-width: 1200px) {
   header.NavBar div.ServiciosDropDown {
     box-shadow: none !important;
+  }
+}
+
+/* 1620px */
+@media (max-width: 1620px) {
+  header.NavBar a {
+    font-size: 0.8em !important;
   }
 }
 
@@ -120,6 +140,25 @@ footer div.bg_blue {
   background-color: #0060a2;
 }
 
+/* 1200px */
+@media (max-width: 1200px) {
+  footer {
+    font-size: 0.9em;
+  }
+  footer div.logo {
+    width: 100% !important;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  footer div.logo {
+    width: 90% !important;
+  }
+}
+
+/* 768px */
+/* 576px */
 /* Estilos de la HOME PAGE */
 /* MAIN COVER STYLES */
 section.main.cover {
@@ -194,8 +233,8 @@ section.destacados a.btn-primary {
   position: absolute;
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
-  bottom: 0px;
-  right: 0;
+  bottom: 15px;
+  right: 0px;
   border: none;
   line-height: 645px;
 }
@@ -216,7 +255,7 @@ section.destacados a.btn-secundary {
   position: absolute;
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
-  bottom: 0px;
+  bottom: 15px;
   right: 0;
   border: none;
   line-height: 645px;
@@ -388,6 +427,243 @@ section.Map button:hover {
 
 section.Map a.redIcon:hover {
   font-size: 2em;
+}
+
+@media (max-width: 1630px) {
+  /* DESTACADOS SECTION */
+  section.destacados h2 {
+    font-size: 4.5em;
+  }
+  section.destacados h3 {
+    font-size: 1.5em;
+  }
+  section.destacados hr.Barra {
+    height: 3px;
+    margin-bottom: 1.5rem;
+  }
+  section.destacados a.btn-primary {
+    font-size: 2.2em;
+    bottom: 15px;
+    right: 0px;
+    border: none;
+    line-height: 500px;
+  }
+  section.destacados a.btn-secundary {
+    font-size: 2.2em;
+    bottom: 15px;
+    right: 0;
+    line-height: 500px;
+  }
+  section.destacados .card-body div.customtext p.Icons {
+    font-size: 1em;
+  }
+  section.destacados .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.destacados .card-body div.customtext p {
+    font-size: 1em;
+  }
+  .card {
+    border: none;
+    border-radius: 0;
+  }
+  .controls-top {
+    text-align: right;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    left: 0px;
+  }
+  a.btn-floating {
+    color: white;
+    border: solid 2px white;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 21px;
+    font-size: 27px;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background-color: #0060a2;
+    transition: all 0.3s;
+  }
+  a.btn-floating:hover {
+    background-color: white;
+    color: grey;
+    text-decoration: none;
+  }
+  a.btn-floating.prev {
+    right: 40px;
+    text-indent: -2px;
+  }
+  a.btn-floating.next {
+    text-indent: 2px;
+  }
+  ol.carousel-indicators.destacados {
+    bottom: -70px;
+  }
+  ol.carousel-indicators.destacados li {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
+    background-color: #4f76b0;
+  }
+  div.h-7em {
+    height: 9em;
+  }
+  /* FORMULARIO SECTION */
+  section.Formulario div.contactoForm {
+    margin-right: 1em;
+    margin-left: -22em;
+  }
+  section.Formulario div.Caption {
+    top: 130px;
+    left: 430px;
+  }
+  section.Formulario div.Caption h3 {
+    font-size: 3em;
+  }
+  section.Formulario div.Caption p {
+    font-size: 1.5em;
+  }
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+  /* MAIN COVER STYLES */
+  section.main.cover h1 {
+    font-size: 5.5em;
+    bottom: 125px;
+    left: 100px;
+  }
+  section.main.cover form.HomeBuscador {
+    width: 80%;
+    bottom: 325px;
+    left: 100px;
+  }
+  section.main.cover form.HomeBuscador label {
+    font-size: 1.2em;
+  }
+  section.main.cover form.HomeBuscador input,
+  section.main.cover form.HomeBuscador select {
+    min-height: 35px;
+  }
+  /* FORMULARIO SECTION */
+  section.Formulario div.contactoForm {
+    margin-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  section.Formulario div.Caption {
+    text-align: center;
+    position: relative !important;
+    top: 0px;
+    left: 0px;
+  }
+  section.Formulario div.Caption h3 {
+    font-size: 4em;
+  }
+  section.Formulario div.Caption p {
+    font-size: 2em;
+  }
+  section.Formulario img {
+    display: none;
+  }
+  section.Map div.jumbotron.texthash {
+    width: 75% !important;
+  }
+  section.Map div.caption h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  section.Map div.jumbotron.texthash {
+    width: 80% !important;
+  }
+  section.Map div.caption h2 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+  section.Map a.redIcon:hover {
+    font-size: 2em;
+  }
+  section.Map img.mapa {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  /* MAIN COVER STYLES */
+  section.main.cover h1 {
+    font-size: 4.5em;
+    bottom: 75px;
+    left: 65px;
+  }
+  section.main.cover form.HomeBuscador {
+    width: 80%;
+    bottom: 235px;
+    left: 65px;
+  }
+  section.main.cover form.HomeBuscador label {
+    font-size: 1.2em;
+  }
+  /* MAP SECTION */
+  section.Map div.jumbotron.texthash {
+    width: 85% !important;
+  }
+  section.Map div.caption h2 {
+    font-size: 2.8em;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  /* MAIN COVER STYLES */
+  section.main.cover {
+    height: 800px !important;
+  }
+  section.main.cover h1 {
+    margin-bottom: 0px;
+    font-size: 2.8em;
+    bottom: 135px;
+    left: 38px;
+  }
+  section.main.cover form.HomeBuscador {
+    width: 80%;
+    bottom: 235px;
+    left: 38px;
+  }
+  section.main.cover form.HomeBuscador label {
+    font-size: 1.2em;
+  }
+  section.Formulario div.Caption h3 {
+    font-size: 2.5em;
+  }
+  section.Formulario div.Caption p {
+    font-size: 1em;
+  }
+  section.Formulario div.contactoForm h2 {
+    font-size: 3.5em;
+  }
+  section.Map div.jumbotron.texthash {
+    width: 85% !important;
+  }
+  section.Map div.caption h2 {
+    font-size: 2.5em;
+  }
+  section.Map div.direccion h3,
+  section.Map div.direccion p {
+    font-size: 1em;
+  }
 }
 
 /* Estilos de las Paginas de Busquedas */

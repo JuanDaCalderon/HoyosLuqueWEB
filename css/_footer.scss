@@ -11,3 +11,34 @@ footer {
     background-color: $MainBlue;
   }
 }
+/* 1200px */
+@media (min-width: $BreakPointExtraLarge) {
+}
+@media (max-width: $BreakPointExtraLarge) {
+  footer {
+    font-size: 0.9em;
+    div.logo {
+      width: 100% !important;
+    }
+  }
+}
+/* 992px */
+@media (min-width: $BreakPointLarge) {
+}
+@media (max-width: $BreakPointLarge) {
+  footer {
+    div.logo {
+      width: 90% !important;
+    }
+  }
+}
+/* 768px */
+@media (min-width: $BreakPointMedium) {
+}
+@media (max-width: $BreakPointMedium) {
+}
+/* 576px */
+@media (min-width: $BreakPointSmall) {
+}
+@media (max-width: $BreakPointSmall) {
+}
