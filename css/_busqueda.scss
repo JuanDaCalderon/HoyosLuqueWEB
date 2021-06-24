@@ -3,6 +3,7 @@ section.coverInternas {
   background-image: url(../assets/Banners/Busqueda.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 420px;
   div.wrap {
     background-image: linear-gradient(
@@ -69,9 +70,8 @@ section.resultados {
     font-family: $FuenteBebas;
     background-color: transparent;
     bottom: 0px;
-    right: 0;
+    right: 0px;
     border: none;
-    line-height: 645px;
     &:hover {
       background-image: linear-gradient(
         to bottom,
@@ -93,9 +93,8 @@ section.resultados {
     font-family: $FuenteBebas;
     background-color: transparent;
     bottom: 0px;
-    right: 0;
+    right: 0px;
     border: none;
-    line-height: 645px;
     &:hover {
       background-color: transparent;
     }
@@ -145,6 +144,203 @@ section.resultados {
         &:hover {
           background-color: $SecondBlue;
           color: white;
+        }
+      }
+    }
+  }
+}
+/* 1630px */
+@media (max-width: 1630px) {
+  /* Resultados SECTION */
+  section.resultados {
+    hr.Barra {
+      height: 3px;
+      margin-bottom: 1.5rem;
+    }
+    a.btn-primary {
+      font-size: 2.2em;
+    }
+    a.btn-secundary {
+      font-size: 2.2em;
+    }
+    .card {
+      .card-body {
+        h2 {
+          font-size: 1.5em;
+        }
+        h3 {
+          font-size: 1.5em;
+        }
+        div.customtext {
+          p.Icons {
+            font-size: 1em;
+            i {
+              font-size: 1em;
+              padding: 0px 9px;
+            }
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+/* 1200px */
+@media (min-width: $BreakPointExtraLarge) {
+}
+@media (max-width: $BreakPointExtraLarge) {
+}
+/* 992px */
+@media (min-width: $BreakPointLarge) {
+}
+@media (max-width: $BreakPointLarge) {
+  /* Resultados SECTION */
+  section.resultados {
+    hr.Barra {
+      height: 3px;
+      margin-bottom: 1.5rem;
+    }
+    a.btn-primary {
+      font-size: 3.5em;
+    }
+    a.btn-secundary {
+      font-size: 3.5em;
+    }
+    .card {
+      .card-body {
+        h2 {
+          font-size: 3em;
+        }
+        h3 {
+          font-size: 3em;
+        }
+        div.customtext {
+          p.Icons {
+            font-size: 1.5em;
+            i {
+              font-size: 1em;
+              padding: 0px 9px;
+            }
+          }
+          p {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+/* 768px */
+@media (min-width: $BreakPointMedium) {
+}
+@media (max-width: $BreakPointMedium) {
+  /* Resultados SECTION */
+  section.resultados {
+    a.btn-primary {
+      font-size: 3em;
+    }
+    a.btn-secundary {
+      font-size: 3em;
+    }
+    .card {
+      .card-body {
+        h2 {
+          font-size: 2em;
+        }
+        h3 {
+          font-size: 2em;
+        }
+        div.customtext {
+          p.Icons {
+            font-size: 1em;
+            i {
+              font-size: 1em;
+              padding: 0px 9px;
+            }
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+/* 576px */
+@media (min-width: $BreakPointSmall) {
+}
+@media (max-width: $BreakPointSmall) {
+  section.coverInternas {
+    div.wrap {
+      h1 {
+        font-size: 4.5em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+  section.resultados {
+    a.btn-primary {
+      font-size: 2em;
+    }
+    a.btn-secundary {
+      font-size: 2em;
+    }
+    .card {
+      .card-body {
+        h2 {
+          font-size: 1.5em;
+        }
+        h3 {
+          font-size: 1.5em;
+        }
+        div.customtext {
+          p.Icons {
+            font-size: 0.8em;
+            i {
+              font-size: 1em;
+              padding: 0px 9px;
+            }
+          }
+          p {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+/* 380px */
+@media (max-width: 380px) {
+  section.resultados {
+    a.btn-primary {
+      font-size: 1.5em;
+    }
+    a.btn-secundary {
+      font-size: 1.5em;
+    }
+    .card {
+      .card-body {
+        h2 {
+          font-size: 1em;
+        }
+        h3 {
+          font-size: 1em;
+        }
+        div.customtext {
+          p.Icons {
+            font-size: 0.5em;
+            i {
+              font-size: 1em;
+              padding: 0px 9px;
+            }
+          }
+          p {
+            font-size: 0.5em;
+          }
         }
       }
     }

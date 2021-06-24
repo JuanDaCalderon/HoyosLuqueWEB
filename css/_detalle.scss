@@ -39,6 +39,15 @@ section.MainDetalle {
   }
 }
 
+ol.carousel-indicators.galeria {
+  li {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    background-color: $SecondBlue;
+  }
+}
+
 section.ubicacion {
   h2 {
     color: $MainBlue;
@@ -118,6 +127,7 @@ section.Detalle {
     }
   }
 }
+
 section.galeria {
   .controls-top {
     text-align: right;
@@ -134,6 +144,184 @@ section.galeria {
     }
     &.next {
       left: 0px;
+    }
+  }
+}
+@media (max-width: 1630px) {
+  section.MainDetalle {
+    div.row {
+      div.detail {
+        height: 150px;
+      }
+      h1 {
+        font-size: 3em;
+        &.price {
+          font-size: 4em;
+        }
+      }
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.6em;
+        &.text {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+/* 1200px */
+@media (min-width: $BreakPointExtraLarge) {
+}
+@media (max-width: $BreakPointExtraLarge) {
+  section.Detalle {
+    li {
+      font-size: 16px;
+    }
+    p {
+      font-size: 16px;
+      &.asesor {
+        font-size: 0.8em;
+      }
+    }
+    h3 {
+      font-size: 2.5em;
+    }
+    h4 {
+      font-size: 2em;
+      &.asesor {
+        font-size: 2em;
+      }
+    }
+    h5 {
+      font-size: 1.5em;
+    }
+  }
+  section.MainDetalle {
+    div.row {
+      h1 {
+        font-size: 2em;
+        &.price {
+          font-size: 3em;
+        }
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1.4em;
+        &.text {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+/* 992px */
+@media (min-width: $BreakPointLarge) {
+}
+@media (max-width: $BreakPointLarge) {
+  section.MainDetalle {
+    height: auto !important;
+    div.row {
+      div.detail {
+        height: auto !important;
+      }
+      h1 {
+        font-size: 3em;
+        &.price {
+          font-size: 4em;
+        }
+      }
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.6em;
+        &.text {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  section.Detalle {
+    li {
+      font-size: 14px;
+    }
+  }
+}
+/* 768px */
+@media (min-width: $BreakPointMedium) {
+}
+@media (max-width: $BreakPointMedium) {
+  section.MainDetalle {
+    div.row {
+      h1 {
+        font-size: 3em;
+        &.price {
+          font-size: 2.5em;
+        }
+      }
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.2em;
+        &.text {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+/* 576px */
+@media (min-width: $BreakPointSmall) {
+}
+@media (max-width: $BreakPointSmall) {
+  section.MainDetalle {
+    div.row {
+      hr.Barra {
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+      h1 {
+        font-size: 1.5em;
+        &.price {
+          font-size: 1.5em;
+        }
+      }
+      h2 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.7em;
+        &.text {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+  section.Detalle {
+    p {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1.2em;
+      &.asesor {
+        font-size: 2.5em;
+      }
+    }
+    h5 {
+      font-size: 2em;
     }
   }
 }

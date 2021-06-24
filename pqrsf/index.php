@@ -17,7 +17,7 @@
          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur risus imperdiet nisi suscipit consequat. Nullam augue quam, condimentum vel mollis sed, hendrerit quis ipsum. Proin sagittis, ipsum sit amet placerat eleifend, urna libero egestas neque, nec auctor lorem est nec lorem. Sed elit erat, volutpat sed imperdiet vel, elementum ac ante.</p>
         </div>
         <div class="container col-md-7 d-flex flex-row justify-content-center align-items-center mt-5 px-0">
-         <button type="submit" class="btn btn-primary w-100 rounded-0 font-weight-bold ">SOLICITUD</button>
+         <a target="_blank" href="http://199.189.87.44/hoyosluque/pqr_adicionar.cfm" class="btn btn-primary w-100 rounded-0 font-weight-bold ">SOLICITUD</a>
         </div>
      </div>  
     </div>  

@@ -34,10 +34,10 @@
     </div>
     <div class="row mt-4 mt-lg-5 mb-1 mb-lg-3">
         <div class="col-12 col-lg-6 d-flex justify-content-center mb-3 mb-lg-0">
-            <a href="#"><img class="img-fluid" src="../assets/pse.png" alt="Pse"></a>
+            <a target="_blank" href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/banco-de-occidente/resultado-busqueda/realizar-pago-facturadores?idConv=00003315&origen=buscar"><img class="img-fluid" src="../assets/pse.png" alt="Pse"></a>
         </div>
         <div class="col-12 col-lg-6 d-flex justify-content-center">
-            <a href="#"><img class="img-fluid" src="../assets/BarCode.png" alt="Codigo de barras"></a>
+            <a target="_blank" href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=441&tipo=2"><img class="img-fluid" src="../assets/BarCode.png" alt="Codigo de barras"></a>
         </div>
     </div>
 

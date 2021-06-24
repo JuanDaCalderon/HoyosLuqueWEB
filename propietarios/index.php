@@ -23,7 +23,7 @@
          <p>Señores Propietarios, le recordamos, que su estado de cuenta está disponible el día 5 del siguiente mes a consultar.</p>
         </div>
         <div class="container d-flex flex-row justify-content-center align-items-center mt-5">
-         <a href="#"><img src="../assets/Propietarios-toDo.png" alt="Propietarios"></a>
+         <a target="_blank" href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=441&tipo=1"><img src="../assets/Propietarios-toDo.png" alt="Propietarios"></a>
         </div>
     </div>
  </div> 

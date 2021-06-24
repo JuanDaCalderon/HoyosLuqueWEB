@@ -64,6 +64,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
 /* HEADER NAVBAR STYLES*/
 header.NavBar a.Logo {
   width: 11%;
@@ -753,6 +757,7 @@ section.coverInternas {
   background-image: url(../assets/Banners/Busqueda.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 420px;
 }
 
@@ -820,9 +825,8 @@ section.resultados a.btn-primary {
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
   bottom: 0px;
-  right: 0;
+  right: 0px;
   border: none;
-  line-height: 645px;
 }
 
 section.resultados a.btn-primary:hover {
@@ -842,9 +846,8 @@ section.resultados a.btn-secundary {
   font-family: "Bebas Neue", cursive;
   background-color: transparent;
   bottom: 0px;
-  right: 0;
+  right: 0px;
   border: none;
-  line-height: 645px;
 }
 
 section.resultados a.btn-secundary:hover {
@@ -899,6 +902,154 @@ section.resultados nav ul a.page-link:hover {
   color: white;
 }
 
+/* 1630px */
+@media (max-width: 1630px) {
+  /* Resultados SECTION */
+  section.resultados hr.Barra {
+    height: 3px;
+    margin-bottom: 1.5rem;
+  }
+  section.resultados a.btn-primary {
+    font-size: 2.2em;
+  }
+  section.resultados a.btn-secundary {
+    font-size: 2.2em;
+  }
+  section.resultados .card .card-body h2 {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body h3 {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons {
+    font-size: 1em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.resultados .card .card-body div.customtext p {
+    font-size: 1em;
+  }
+}
+
+/* 1200px */
+/* 992px */
+@media (max-width: 992px) {
+  /* Resultados SECTION */
+  section.resultados hr.Barra {
+    height: 3px;
+    margin-bottom: 1.5rem;
+  }
+  section.resultados a.btn-primary {
+    font-size: 3.5em;
+  }
+  section.resultados a.btn-secundary {
+    font-size: 3.5em;
+  }
+  section.resultados .card .card-body h2 {
+    font-size: 3em;
+  }
+  section.resultados .card .card-body h3 {
+    font-size: 3em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.resultados .card .card-body div.customtext p {
+    font-size: 1.5em;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  /* Resultados SECTION */
+  section.resultados a.btn-primary {
+    font-size: 3em;
+  }
+  section.resultados a.btn-secundary {
+    font-size: 3em;
+  }
+  section.resultados .card .card-body h2 {
+    font-size: 2em;
+  }
+  section.resultados .card .card-body h3 {
+    font-size: 2em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons {
+    font-size: 1em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.resultados .card .card-body div.customtext p {
+    font-size: 1em;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  section.coverInternas div.wrap h1 {
+    font-size: 4.5em;
+  }
+  section.coverInternas div.wrap p {
+    font-size: 0.8em;
+  }
+  section.resultados a.btn-primary {
+    font-size: 2em;
+  }
+  section.resultados a.btn-secundary {
+    font-size: 2em;
+  }
+  section.resultados .card .card-body h2 {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body h3 {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons {
+    font-size: 0.8em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.resultados .card .card-body div.customtext p {
+    font-size: 0.8em;
+  }
+}
+
+/* 380px */
+@media (max-width: 380px) {
+  section.resultados a.btn-primary {
+    font-size: 1.5em;
+  }
+  section.resultados a.btn-secundary {
+    font-size: 1.5em;
+  }
+  section.resultados .card .card-body h2 {
+    font-size: 1em;
+  }
+  section.resultados .card .card-body h3 {
+    font-size: 1em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons {
+    font-size: 0.5em;
+  }
+  section.resultados .card .card-body div.customtext p.Icons i {
+    font-size: 1em;
+    padding: 0px 9px;
+  }
+  section.resultados .card .card-body div.customtext p {
+    font-size: 0.5em;
+  }
+}
+
 section.MainDetalle {
   background-color: white;
   background-position: center;
@@ -943,6 +1094,13 @@ section.MainDetalle div.row p {
 
 section.MainDetalle div.row p.text {
   font-size: 1.6em;
+}
+
+ol.carousel-indicators.galeria li {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+  background-color: #4f76b0;
 }
 
 section.ubicacion h2 {
@@ -1055,9 +1213,171 @@ section.galeria a.btn-floating.next {
   left: 0px;
 }
 
-section.coverInternas {
+@media (max-width: 1630px) {
+  section.MainDetalle div.row div.detail {
+    height: 150px;
+  }
+  section.MainDetalle div.row h1 {
+    font-size: 3em;
+  }
+  section.MainDetalle div.row h1.price {
+    font-size: 4em;
+  }
+  section.MainDetalle div.row h2 {
+    font-size: 2em;
+  }
+  section.MainDetalle div.row p {
+    font-size: 1.6em;
+  }
+  section.MainDetalle div.row p.text {
+    font-size: 1.5em;
+  }
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+  section.Detalle li {
+    font-size: 16px;
+  }
+  section.Detalle p {
+    font-size: 16px;
+  }
+  section.Detalle p.asesor {
+    font-size: 0.8em;
+  }
+  section.Detalle h3 {
+    font-size: 2.5em;
+  }
+  section.Detalle h4 {
+    font-size: 2em;
+  }
+  section.Detalle h4.asesor {
+    font-size: 2em;
+  }
+  section.Detalle h5 {
+    font-size: 1.5em;
+  }
+  section.MainDetalle div.row h1 {
+    font-size: 2em;
+  }
+  section.MainDetalle div.row h1.price {
+    font-size: 3em;
+  }
+  section.MainDetalle div.row h2 {
+    font-size: 1.5em;
+  }
+  section.MainDetalle div.row p {
+    font-size: 1.4em;
+  }
+  section.MainDetalle div.row p.text {
+    font-size: 1.2em;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  section.MainDetalle {
+    height: auto !important;
+  }
+  section.MainDetalle div.row div.detail {
+    height: auto !important;
+  }
+  section.MainDetalle div.row h1 {
+    font-size: 3em;
+  }
+  section.MainDetalle div.row h1.price {
+    font-size: 4em;
+  }
+  section.MainDetalle div.row h2 {
+    font-size: 2em;
+  }
+  section.MainDetalle div.row p {
+    font-size: 1.6em;
+  }
+  section.MainDetalle div.row p.text {
+    font-size: 1.5em;
+  }
+  section.Detalle li {
+    font-size: 14px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  section.MainDetalle div.row h1 {
+    font-size: 3em;
+  }
+  section.MainDetalle div.row h1.price {
+    font-size: 2.5em;
+  }
+  section.MainDetalle div.row h2 {
+    font-size: 2em;
+  }
+  section.MainDetalle div.row p {
+    font-size: 1.2em;
+  }
+  section.MainDetalle div.row p.text {
+    font-size: 1em;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  section.MainDetalle div.row hr.Barra {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  section.MainDetalle div.row h1 {
+    font-size: 1.5em;
+  }
+  section.MainDetalle div.row h1.price {
+    font-size: 1.5em;
+  }
+  section.MainDetalle div.row h2 {
+    font-size: 1em;
+  }
+  section.MainDetalle div.row p {
+    font-size: 0.7em;
+  }
+  section.MainDetalle div.row p.text {
+    font-size: 0.7em;
+  }
+  section.Detalle p {
+    font-size: 14px;
+  }
+  section.Detalle h2 {
+    font-size: 2em;
+  }
+  section.Detalle h3 {
+    font-size: 1.5em;
+  }
+  section.Detalle h4 {
+    font-size: 1.2em;
+  }
+  section.Detalle h4.asesor {
+    font-size: 2.5em;
+  }
+  section.Detalle h5 {
+    font-size: 2em;
+  }
+}
+
+section.coverInternasQ {
   background-image: url(../assets/Banners/QuienesSomos.jpg);
   background-position-y: -238px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+}
+
+section.coverInternasQ div.wrap {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
+}
+
+section.coverInternasQ div.wrap h1 {
+  font-size: 6.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 section.info p {
@@ -1070,6 +1390,7 @@ section.bannerAzul {
 }
 
 section.bannerAzul h2 {
+  text-align: center;
   margin: 0;
   font-size: 5.5em;
   color: white;
@@ -1082,6 +1403,43 @@ section.features h3 {
 
 section.features p {
   font-size: 18px;
+}
+
+/* 1200px */
+/* 992px */
+@media (max-width: 992px) {
+  section.coverInternasQ {
+    background-position: center !important;
+  }
+  section.coverInternasQ div.wrap h1 {
+    font-size: 6em;
+  }
+  section.bannerAzul h2 {
+    font-size: 4em;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  section.coverInternasQ {
+    background-position: center !important;
+  }
+  section.coverInternasQ div.wrap h1 {
+    font-size: 4em;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  section.info p {
+    text-align: center !important;
+  }
+  section.bannerAzul {
+    height: 200px;
+  }
+  section.bannerAzul h2 {
+    font-size: 3em;
+  }
 }
 
 section.coverInternasP {
@@ -1107,12 +1465,12 @@ section.pqrsf hr.Barra {
   margin-bottom: 1.5rem;
 }
 
-section.pqrsf button {
+section.pqrsf a {
   background-color: #0060a2;
   border-color: #0060a2;
 }
 
-section.pqrsf button:hover {
+section.pqrsf a:hover {
   background-color: #004d80;
   border-color: #004d80;
 }

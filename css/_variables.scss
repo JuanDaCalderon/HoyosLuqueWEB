@@ -100,4 +100,7 @@ html {
     background-color: $FormBlue;
     border-radius: 5px;
   }
+  &::-webkit-scrollbar-track {
+    background-color: rgb(241, 241, 241);
+  }
 }
