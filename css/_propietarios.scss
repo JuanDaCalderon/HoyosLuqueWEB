@@ -1,0 +1,87 @@
+section.coverInternasPro {
+  background-image: url(../assets/Banners/propietarios.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+  div.wrap {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(16, 24, 49, 1)
+    );
+    h1 {
+      font-size: 6.2em;
+      text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+section.propietarios {
+  h2 {
+    color: $MainBlue;
+    font-size: 4.5em;
+  }
+  hr.Barra {
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  div.text {
+    p {
+      font-weight: map-get($FontWeights, w500);
+      font-size: 18px;
+      width: 600px;
+    }
+  }
+}
+.px-6 {
+  padding-left: 6.5rem !important;
+  padding-right: 6.5rem !important;
+}
+
+/* 1200px */
+@media (min-width: $BreakPointExtraLarge) {
+}
+@media (max-width: $BreakPointExtraLarge) {
+}
+/* 992px */
+@media (min-width: $BreakPointLarge) {
+}
+@media (max-width: $BreakPointLarge) {
+  section.propietarios {
+    h2 {
+      text-align: center !important;
+      font-size: 2.5em;
+    }
+    hr.Barra {
+      display: none;
+    }
+  }
+  .px-6 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+/* 768px */
+@media (min-width: $BreakPointMedium) {
+}
+@media (max-width: $BreakPointMedium) {
+}
+/* 576px */
+@media (min-width: $BreakPointSmall) {
+}
+@media (max-width: $BreakPointSmall) {
+  section.coverInternasPro {
+    div.wrap {
+      height: 420px !important;
+      padding-bottom: 3em !important;
+      h1 {
+        font-size: 3.2em;
+      }
+    }
+  }
+  .px-6 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}

@@ -41,4 +41,13 @@ footer {
 @media (min-width: $BreakPointSmall) {
 }
 @media (max-width: $BreakPointSmall) {
+  footer {
+    div.text {
+      text-align: center;
+      a,
+      span {
+        font-size: 0.8em !important;
+      }
+    }
+  }
 }

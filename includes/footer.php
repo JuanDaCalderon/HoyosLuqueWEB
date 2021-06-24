@@ -2,7 +2,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="d-flex align-items-center col-12 col-lg-8 text-white py-4 px-5">
-                        <div class="px-0 pl-md-5">
+                        <div class="px-0 pl-md-5 text">
                             <a class="text-white" href="<?php echo $base_url ?>/politicas">TÉRMINOS Y POLITICAS |</a>
                             <span class="text-uppercase"> CALLE 119 # 14 - 42 - Oficina 302 | 4661302 • 311 8064564 | servicioalcliente@hoyosluque.com</span>
                         </div>

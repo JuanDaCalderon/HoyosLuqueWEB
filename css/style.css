@@ -159,6 +159,16 @@ footer div.bg_blue {
 
 /* 768px */
 /* 576px */
+@media (max-width: 576px) {
+  footer div.text {
+    text-align: center;
+  }
+  footer div.text a,
+  footer div.text span {
+    font-size: 0.8em !important;
+  }
+}
+
 /* Estilos de la HOME PAGE */
 /* MAIN COVER STYLES */
 section.main.cover {
@@ -1072,5 +1082,210 @@ section.features h3 {
 
 section.features p {
   font-size: 18px;
+}
+
+section.coverInternasP {
+  background-image: url(../assets/Banners/pqrsf.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+}
+
+section.coverInternasP div.wrap {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
+}
+
+section.coverInternasP div.wrap h1 {
+  font-size: 6.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.pqrsf hr.Barra {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.pqrsf button {
+  background-color: #0060a2;
+  border-color: #0060a2;
+}
+
+section.pqrsf button:hover {
+  background-color: #004d80;
+  border-color: #004d80;
+}
+
+.px-6 {
+  padding-left: 6.5rem !important;
+  padding-right: 6.5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 7.2rem !important;
+}
+
+/* 1200px */
+/* 992px */
+@media (max-width: 992px) {
+  .mb-6 {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* 768px */
+/* 576px */
+section.coverInternasPro {
+  background-image: url(../assets/Banners/propietarios.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+}
+
+section.coverInternasPro div.wrap {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
+}
+
+section.coverInternasPro div.wrap h1 {
+  font-size: 6.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.propietarios h2 {
+  color: #0060a2;
+  font-size: 4.5em;
+}
+
+section.propietarios hr.Barra {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.propietarios div.text p {
+  font-weight: 500;
+  font-size: 18px;
+  width: 600px;
+}
+
+.px-6 {
+  padding-left: 6.5rem !important;
+  padding-right: 6.5rem !important;
+}
+
+/* 1200px */
+/* 992px */
+@media (max-width: 992px) {
+  section.propietarios h2 {
+    text-align: center !important;
+    font-size: 2.5em;
+  }
+  section.propietarios hr.Barra {
+    display: none;
+  }
+  .px-6 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+/* 768px */
+/* 576px */
+@media (max-width: 576px) {
+  section.coverInternasPro div.wrap {
+    height: 420px !important;
+    padding-bottom: 3em !important;
+  }
+  section.coverInternasPro div.wrap h1 {
+    font-size: 3.2em;
+  }
+  .px-6 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+section.coverInternasI {
+  background-image: url(../assets/Banners/inquilinos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+}
+
+section.coverInternasI div.wrap {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #101831);
+}
+
+section.coverInternasI div.wrap h1 {
+  font-size: 6.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.coverInternasI div.wrap p {
+  margin-top: -0.5em;
+  font-size: 1.2em;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+section.inquilinos h2 {
+  color: #0060a2;
+  font-size: 4.5em;
+}
+
+section.inquilinos hr.Barra {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.inquilinos p.textTenerEnCuenta {
+  font-weight: 500;
+}
+
+.px-6 {
+  padding-left: 6.5rem !important;
+  padding-right: 6.5rem !important;
+}
+
+.pl-6 {
+  padding-left: 19rem !important;
+}
+
+/* 1200px */
+/* 992px */
+@media (max-width: 992px) {
+  section.inquilinos h2 {
+    text-align: center !important;
+    font-size: 2.5em;
+  }
+  section.inquilinos hr.Barra {
+    display: none;
+  }
+  .px-6 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+/* 768px */
+/* 576px */
+@media (max-width: 576px) {
+  section.coverInternasI div.wrap {
+    height: 420px !important;
+    padding-bottom: 3em !important;
+  }
+  section.coverInternasI div.wrap h1 {
+    font-size: 4.2em;
+  }
+  section.coverInternasI div.wrap p {
+    font-size: 1em;
+  }
+  .px-6 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
