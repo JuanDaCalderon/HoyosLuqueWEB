@@ -302,6 +302,15 @@ section.destacados .card-body div.customtext p {
   border-radius: 0;
 }
 
+.card img.card-img-top {
+  height: 365px !important;
+  object-fit: none;
+}
+
+#proyectoscards img.card-img-top {
+  object-fit: cover !important;
+}
+
 .controls-top {
   text-align: right;
   position: relative;
