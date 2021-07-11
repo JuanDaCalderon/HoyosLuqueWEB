@@ -107,6 +107,16 @@ section.resultados {
   .card {
     border: none;
     border-radius: 0;
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.08);
+    img.card-img-top {
+      height: 365px !important;
+      object-fit: none;
+    }
+    img.tipo {
+      width: 40px;
+      top: 18px;
+      left: 208px;
+    }
     .card-body {
       h2 {
         font-size: 2.2em;
@@ -191,6 +201,14 @@ section.resultados {
 @media (min-width: $BreakPointExtraLarge) {
 }
 @media (max-width: $BreakPointExtraLarge) {
+  section.resultados {
+    .card {
+      img.tipo {
+        top: 18px;
+        left: 135px;
+      }
+    }
+  }
 }
 /* 992px */
 @media (min-width: $BreakPointLarge) {
@@ -209,6 +227,10 @@ section.resultados {
       font-size: 3.5em;
     }
     .card {
+      img.tipo {
+        top: 25px;
+        left: 225px;
+      }
       .card-body {
         h2 {
           font-size: 3em;
@@ -245,6 +267,10 @@ section.resultados {
       font-size: 3em;
     }
     .card {
+      img.tipo {
+        top: 18px;
+        left: 190px;
+      }
       .card-body {
         h2 {
           font-size: 2em;
@@ -290,6 +316,11 @@ section.resultados {
       font-size: 2em;
     }
     .card {
+      img.tipo {
+        top: 16px;
+        left: 138px;
+        width: 25px;
+      }
       .card-body {
         h2 {
           font-size: 1.5em;
@@ -323,6 +354,10 @@ section.resultados {
       font-size: 1.5em;
     }
     .card {
+      img.tipo {
+        top: 12px;
+        left: 106px;
+      }
       .card-body {
         h2 {
           font-size: 1em;

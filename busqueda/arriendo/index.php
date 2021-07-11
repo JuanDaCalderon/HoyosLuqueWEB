@@ -13,96 +13,117 @@
     <div class="container-fluid">
         <div class="row buscador">
             <div class="col-12 col-xl-11 pl-0">
-                <form class="Buscador bg-white p-4">
+                <form id="Busqueda" class="Buscador bg-white p-4">
                   <div class="row justify-content-between px-4">
                     <div class="col-12 col-lg-2 px-0 pr-lg-2 pl-md-0">
                         <label class="mb-0" for="Ciudad">CIUDAD</label>
-                        <select class="form-control rounded-0" id="Ciudad">
-                            <option selected disabled>Todos</option>
-                            <option>Bogota</option>
-                            <option>Medellin</option>
+                        <select name="ciudad" class="form-control rounded-0" id="Ciudad">
+                            <option value="" selected disabled>Todos</option>
+                            <option value="11001">Bogotá</option>
+                            <option value="76001">Cali</option>
+                            <option value="13001">Cartagena</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="Barrio">BARRIO</label>
-                        <select class="form-control rounded-0" id="Barrio">
-                            <option selected disabled>Todos</option>
-                            <option>Chicó Navarra</option>
-                            <option>San Patricio</option>
-                            <option>Santa Barbara</option>
+                        <select name="barrio" class="form-control rounded-0" id="Barrio">
+                            <option value="" selected disabled>Todos</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="Estrato">ESTRATO</label>
-                        <select class="form-control rounded-0" id="Estrato">
-                            <option selected disabled>Todos</option>
-                            <option>6</option>
-                            <option>5</option>
-                            <option>4</option>
+                        <select name="estrato" class="form-control rounded-0" id="Estrato">
+                            <option value="" selected disabled>Todos</option>
+                            <option value="6">6</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="PrecioDesde">PRECIO DESDE</label>
-                        <select class="form-control rounded-0" id="PrecioDesde">
-                            <option selected disabled>Todos</option>
-                            <option>100.000.000</option>
-                            <option>250.000.000</option>
-                            <option>500.000.000</option>
+                        <select name="minprecio" class="form-control rounded-0" id="PrecioDesde">
+                            <option value="0" selected>0</option>
+                            <option value="100000">100000</option>
+                            <option value="100000000">100.000.000</option>
+                            <option value="250000000">250.000.000</option>
+                            <option value="500000000">500.000.000</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="PrecioHasta">PRECIO HASTA</label>
-                        <select class="form-control rounded-0" id="PrecioHasta">
-                            <option selected disabled>Todos</option>
-                            <option>800.000.000</option>
-                            <option>950.000.000</option>
-                            <option>1.000.000.000</option>
+                        <select name="maxprecio" class="form-control rounded-0" id="PrecioHasta">
+                            <option value="" selected disabled>0</option>
+                            <option value="500000000">500.000.000</option>
+                            <option value="1000000000">1.000.000.000</option>
+                            <option value="1500000000">1.500.000.000</option>
+                            <option value="2000000000">2.000.000.000</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 pl-lg-2 pr-md-0">
                         <label class="mb-0" for="Codigo">CÓDIGO</label>
-                        <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
+                        <input name="codigo" value="" type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
                     </div>
                     <hr class="w-100 my-0 my-md-2 bg-white border-white d-none d-lg-block">
                     <div class="col-12 col-lg-2 px-0 pr-lg-2 pl-md-0 d-none d-md-block">
                         <label class="mb-0" for="Modalidad">MODALIDAD</label>
-                        <select class="form-control rounded-0" id="Modalidad">
-                            <option selected disabled>Todos</option>
-                            <option>Venta</option>
-                            <option>Arriendo</option>
+                        <select name="modalidad" class="form-control rounded-0" id="Modalidad">
+                            <option value="" disabled>Todos</option>
+                            <option value="2">Venta</option>
+                            <option value="1" selected>Arriendo</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
-                        <select class="form-control rounded-0" id="TipoInmueble">
-                            <option selected disabled>Todos</option>
-                            <option>Casa</option>
-                            <option>Apartamento</option>
-                            <option>Local</option>
+                        <select name="tipo" class="form-control rounded-0" id="TipoInmueble">
+                            <option value="" selected disabled>Todos</option>
+                            <option value="1">Apartamento</option>
+                            <option value="2">Casa</option>
+                            <option value="3">Apartaestudio</option>
+                            <option value="4">Local</option>
+                            <option value="5">Bodega</option>
+                            <option value="6">Oficina</option>
+                            <option value="9">Edificio</option>
+                            <option value="15">Consultorio</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumHabitaciones">Numero de habitaciones</label>
-                        <select class="form-control rounded-0" id="NumHabitaciones">
-                            <option selected disabled>3</option>
-                            <option>2</option>
-                            <option>1</option>
+                        <select name="habitaciones" class="form-control rounded-0" id="NumHabitaciones">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumBaños">Numero de Baños</label>
-                        <select class="form-control rounded-0" id="NumBaños">
-                            <option selected disabled>3</option>
-                            <option>2</option>
-                            <option>1</option>
+                        <select name="baños" class="form-control rounded-0" id="NumBaños">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumParqueaderos">Numero de Parqueaderos</label>
-                        <select class="form-control rounded-0" id="NumParqueaderos">
-                            <option selected disabled>3</option>
-                            <option>2</option>
-                            <option>1</option>
+                        <select name="parqueaderos" class="form-control rounded-0" id="NumParqueaderos">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 d-flex flex-row justify-content-start align-items-end mt-4 mt-md-0 px-0 pl-lg-2 pr-md-0 pt-3 pt-lg-0">
@@ -111,246 +132,18 @@
                   </div>
                 </form>
             </div>
-            <div class="col-12 col-xl-1 d-flex justify-content-end align-items-end pt-3 pt-xl-0">
-                <p class="m-0">1-9 de <span class="font-weight-bold">120</span></p>
+            <div id="contador" class="col-12 col-xl-1 d-flex justify-content-end align-items-end pt-3 pt-xl-0">
+                <p class="m-0">1-9 de <span class="font-weight-bold">121</span></p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="container-fluid py-2 py-lg-3 py-xl-5 px-6 resultados">
-        <div class="row">
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>CASA En sector norte DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>CASA En sector norte DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>CASA En sector norte DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 pt-3">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/detalle/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-12 color-primary">
-                  <h2>Apartamento En EXCLUSIVO SECTOR DE BOGOTÁ</h2>
-                </div>
-                <hr class="Barra w-100 mx-0 mt-0 mb-3">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
+        <div id="Grid" class="row">
+          <div id="Loader" class="col-12 pt-3">
+            <div class="d-flex justify-content-center">
+              <div class="text-primary spinner-border my-5" style="width: 5rem;height: 5rem;border: 10px solid currentColor;border-right-color: transparent;" role="status">
               </div>
             </div>
           </div>
@@ -369,6 +162,7 @@
           </ul>
         </nav>
 </section>
+
 
 <?php 
     require_once '../../includes/footer.php';

@@ -2,29 +2,34 @@
     require_once 'includes/header.php';
 ?>
 
-<section class="main cover p-5" id="main-banner">
-    <form class="HomeBuscador bg-white p-4">
+<section  class="main cover p-5" id="main-banner">
+    <form id="Busqueda" class="HomeBuscador bg-white p-4">
         <div class="row justify-content-between px-4">
           <div class="col-lg-3 p-0">
             <label class="mb-0" for="Modalidad">MODALIDAD</label>
-            <select class="form-control rounded-0" id="Modalidad">
-                <option selected disabled>Todos</option>
-                <option>Venta</option>
-                <option>Arriendo</option>
+            <select name="modalidad" class="form-control rounded-0" id="Modalidad">
+                <option value="" selected disabled>Todos</option>
+                <option value="2">Venta</option>
+                <option value="1">Arriendo</option>
             </select>
           </div>
           <div class="col-lg-3 p-0">
             <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
-            <select class="form-control rounded-0" id="TipoInmueble">
-                <option selected disabled>Todos</option>
-                <option>Apartamento</option>
-                <option>Casa</option>
-                <option>Local</option>
+            <select name="tipo" class="form-control rounded-0" id="TipoInmueble">
+                <option value="" selected disabled>Todos</option>
+                <option value="1">Apartamento</option>
+                <option value="2">Casa</option>
+                <option value="3">Apartaestudio</option>
+                <option value="4">Local</option>
+                <option value="5">Bodega</option>
+                <option value="6">Oficina</option>
+                <option value="9">Edificio</option>
+                <option value="15">Consultorio</option>
             </select>
           </div>
           <div class="col-lg-2 p-0">
             <label class="mb-0" for="Codigo">CÓDIGO</label>
-            <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
+            <input name="codigo" value="" type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
           </div>
           <div class="col-lg-3 d-flex flex-row justify-content-start align-items-end mt-4 mt-lg-0 p-0">
             <button type="submit" class="btn btn-primary w-100 rounded-0 font-weight-bold">BUSCAR</button>
@@ -34,10 +39,10 @@
     <h1 class="text-white">BUSCA EL INMUEBLE <br> <span>DE TUS SUEÑOS</span></h1>
 </section>
 
-<section class="container-fluid py-5 px-6 destacados">
+<section id="Destacados" class="container-fluid py-5 px-6 destacados">
   <div class="row p-0 pb-4">
     <div class="col-auto">
-      <h2 class="d-inline-block m-0"> INMUEBLE DESTACADO </h2>
+      <h2 class="d-inline-block m-0"> INMUEBLES DESTACADOS </h2>
     </div>
     <div class="col d-flex align-items-center">
       <hr class="Barra w-100">
@@ -53,237 +58,17 @@
     </div>
     <!--/.Controls-->
     <!-- Bullets -->
-    <ol class="carousel-indicators destacados">
-      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-      <li data-target="#multi-item-example" data-slide-to="1"></li>
-      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    <ol id="Bullets" class="carousel-indicators destacados">
     </ol>
     <!-- /Bullets -->
     <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-      <!--First slide-->
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img01.jpg" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img02.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img03.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img04.png" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img05.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$120.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img06.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$5.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 4 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.Second slide-->
-      <!--Third slide-->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img07.png" alt="img01">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$130.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>ARRIENDO</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img08.png" alt="img02">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$525.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 2 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-4">
-            <div class="card mb-2">
-              <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/img09.png" alt="img03">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>$600.000.000</p></a>
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>VENTA</p></a>
-              <div class="card-body px-3 row">
-                <div class="col-5 color-primary">
-                  <h3>BOGOTÁ D.C</h3>
-                  <h3>CHICÓ NAVARRA</h3>
-                </div>
-                <div class="col-7 text-right customtext">
-                  <div>
-                    <p class="Icons"><i class="icon-Dormitorios"></i> 4 <span class="font-weight-bold"> | </span> <i class="icon-Banos"></i> 3 <span class="font-weight-bold"> | </span> <i class="icon-Parqueaderos"></i> 1 </p>
-                  </div>
-                  <div>
-                    <p><span class="font-weight-bold">Area:</span> 68.38m<sup>2</sup> <span class="font-weight-bold">| Cód.</span> 565</p>
-                  </div>
-                </div>
-                <hr class="Barra w-100 m-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/Third slide-->
+    <div id="DestacadoContainer" class="carousel-inner" role="listbox">
     </div>
     <!--/.Slides-->
   </div>
 </section>
 
-<section class="container-fluid py-5 px-6 destacados">
+<section id="Proyectos" class="container-fluid py-5 px-6 destacados">
   <div class="row p-0 pb-4">
     <div class="col d-flex align-items-center">
       <hr class="Barra w-100">
@@ -299,9 +84,9 @@
       <div class="carousel-item active">
         <div class="row">
           <div class="col-12 col-xl-4">
-            <div class="card mb-2">
+            <div id="proyectoscards" class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/DomusSanPatricio.jpg" alt="Domus San patricio">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-1/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS SAN PATRICIO</p></a>
+              <a target="_blank" href="https://www.proyectodomus.com/DomusSanPatricio/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS SAN PATRICIO</p></a>
               <div class="card-body px-3 row">
                 <div class="col-5 color-primary">
                   <h3>BOGOTÁ D.C</h3>
@@ -325,9 +110,9 @@
             </div>
           </div>
           <div class="col-12 col-xl-4">
-            <div class="card mb-2">
+            <div id="proyectoscards" class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/Domus104.jpg" alt="Domus 104">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-2/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>Domus 104</p></a>
+              <a target="_blank" href="https://www.proyectodomus.com/Domus104/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>Domus 104</p></a>
               <div class="card-body px-3 row">
                 <div class="col-5 color-primary">
                   <h3>BOGOTÁ D.C</h3>
@@ -351,9 +136,9 @@
             </div>
           </div>
           <div class="col-12 col-xl-4">
-            <div class="card mb-2">
+            <div id="proyectoscards" class="card mb-2">
               <img class="card-img-top h-100" src="<?php echo $base_url ?>/assets/Carrusel/DomusOriginal.jpg" alt="Domus Original">
-              <a href="<?php echo $base_url ?>/apartamentos/tipo-3/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS 106</p></a>
+              <a target="_blank" href="https://www.proyectodomus.com/DomusOriginal/" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-left"><p>DOMUS 106</p></a>
               <div class="card-body px-3 row">
                 <div class="col-5 color-primary">
                   <h3>BOGOTÁ D.C</h3>
