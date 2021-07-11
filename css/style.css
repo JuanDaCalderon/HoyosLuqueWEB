@@ -864,6 +864,18 @@ section.resultados a.btn-secundary p {
 section.resultados .card {
   border: none;
   border-radius: 0;
+  box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.08);
+}
+
+section.resultados .card img.card-img-top {
+  height: 365px !important;
+  object-fit: none;
+}
+
+section.resultados .card img.tipo {
+  width: 40px;
+  top: 18px;
+  left: 208px;
 }
 
 section.resultados .card .card-body h2 {
@@ -935,6 +947,13 @@ section.resultados nav ul a.page-link:hover {
 }
 
 /* 1200px */
+@media (max-width: 1200px) {
+  section.resultados .card img.tipo {
+    top: 18px;
+    left: 135px;
+  }
+}
+
 /* 992px */
 @media (max-width: 992px) {
   /* Resultados SECTION */
@@ -947,6 +966,10 @@ section.resultados nav ul a.page-link:hover {
   }
   section.resultados a.btn-secundary {
     font-size: 3.5em;
+  }
+  section.resultados .card img.tipo {
+    top: 25px;
+    left: 225px;
   }
   section.resultados .card .card-body h2 {
     font-size: 3em;
@@ -974,6 +997,10 @@ section.resultados nav ul a.page-link:hover {
   }
   section.resultados a.btn-secundary {
     font-size: 3em;
+  }
+  section.resultados .card img.tipo {
+    top: 18px;
+    left: 190px;
   }
   section.resultados .card .card-body h2 {
     font-size: 2em;
@@ -1007,6 +1034,11 @@ section.resultados nav ul a.page-link:hover {
   section.resultados a.btn-secundary {
     font-size: 2em;
   }
+  section.resultados .card img.tipo {
+    top: 16px;
+    left: 138px;
+    width: 25px;
+  }
   section.resultados .card .card-body h2 {
     font-size: 1.5em;
   }
@@ -1032,6 +1064,10 @@ section.resultados nav ul a.page-link:hover {
   }
   section.resultados a.btn-secundary {
     font-size: 1.5em;
+  }
+  section.resultados .card img.tipo {
+    top: 12px;
+    left: 106px;
   }
   section.resultados .card .card-body h2 {
     font-size: 1em;

@@ -2,8 +2,8 @@
     require_once 'includes/header.php';
 ?>
 
-<section class="main cover p-5" id="main-banner">
-    <form class="HomeBuscador bg-white p-4">
+<section  class="main cover p-5" id="main-banner">
+    <form id="Busqueda" class="HomeBuscador bg-white p-4">
         <div class="row justify-content-between px-4">
           <div class="col-lg-3 p-0">
             <label class="mb-0" for="Modalidad">MODALIDAD</label>
@@ -34,7 +34,7 @@
     <h1 class="text-white">BUSCA EL INMUEBLE <br> <span>DE TUS SUEÑOS</span></h1>
 </section>
 
-<section class="container-fluid py-5 px-6 destacados">
+<section id="Destacados" class="container-fluid py-5 px-6 destacados">
   <div class="row p-0 pb-4">
     <div class="col-auto">
       <h2 class="d-inline-block m-0"> INMUEBLE DESTACADO </h2>
@@ -283,7 +283,7 @@
   </div>
 </section>
 
-<section class="container-fluid py-5 px-6 destacados">
+<section id="Proyectos" class="container-fluid py-5 px-6 destacados">
   <div class="row p-0 pb-4">
     <div class="col d-flex align-items-center">
       <hr class="Barra w-100">

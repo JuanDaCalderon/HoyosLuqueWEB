@@ -9,7 +9,11 @@ const config = {
         Authorization: "APP_USR_8316764ad98748b457e02c2bc870a2ad",
         perpage: "9",
         inmobiliaria: "1"
+    },
+    params: {
+
     }
 }
+
 
 export { API, config };
