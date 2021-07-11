@@ -7,24 +7,29 @@
         <div class="row justify-content-between px-4">
           <div class="col-lg-3 p-0">
             <label class="mb-0" for="Modalidad">MODALIDAD</label>
-            <select class="form-control rounded-0" id="Modalidad">
-                <option selected disabled>Todos</option>
-                <option>Venta</option>
-                <option>Arriendo</option>
+            <select name="modalidad" class="form-control rounded-0" id="Modalidad">
+                <option value="" selected disabled>Todos</option>
+                <option value="2">Venta</option>
+                <option value="1">Arriendo</option>
             </select>
           </div>
           <div class="col-lg-3 p-0">
             <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
-            <select class="form-control rounded-0" id="TipoInmueble">
-                <option selected disabled>Todos</option>
-                <option>Apartamento</option>
-                <option>Casa</option>
-                <option>Local</option>
+            <select name="tipo" class="form-control rounded-0" id="TipoInmueble">
+                <option value="" selected disabled>Todos</option>
+                <option value="1">Apartamento</option>
+                <option value="2">Casa</option>
+                <option value="3">Apartaestudio</option>
+                <option value="4">Local</option>
+                <option value="5">Bodega</option>
+                <option value="6">Oficina</option>
+                <option value="9">Edificio</option>
+                <option value="15">Consultorio</option>
             </select>
           </div>
           <div class="col-lg-2 p-0">
             <label class="mb-0" for="Codigo">CÓDIGO</label>
-            <input type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
+            <input name="codigo" value="" type="text" class="form-control rounded-0" id="Codigo" placeholder="# De código">
           </div>
           <div class="col-lg-3 d-flex flex-row justify-content-start align-items-end mt-4 mt-lg-0 p-0">
             <button type="submit" class="btn btn-primary w-100 rounded-0 font-weight-bold">BUSCAR</button>

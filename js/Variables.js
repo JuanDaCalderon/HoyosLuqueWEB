@@ -7,7 +7,7 @@ const API = {
 const config = {
     headers: {
         Authorization: "APP_USR_8316764ad98748b457e02c2bc870a2ad",
-        perpage: "9",
+        perpage: "",
         inmobiliaria: "1"
     },
     params: {

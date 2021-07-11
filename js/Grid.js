@@ -27,6 +27,7 @@ var loader = `
         </div>
     </div>
     `;
+
 document.addEventListener('DOMContentLoaded', () => {
     var FormBusqueda = document.getElementById('Busqueda');
 
@@ -156,6 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parqueaderos === "") { parqueaderos = undefined; };
         if (minprecio === "") { minprecio = undefined; };
         if (maxprecio === "") { maxprecio = undefined; };
+        config.headers = {
+            ...config.headers,
+            perpage: 9,
+        };
         config.params = {
             page: pagina,
             codpro: codigo,
@@ -213,11 +218,13 @@ document.addEventListener('DOMContentLoaded', () => {
             baños: document.querySelector('[name="baños"]'),
             parqueaderos: document.querySelector('[name="parqueaderos"]')
         }
-        ElementGrid.innerHTML = "";
-        ElementGrid.innerHTML = loader;
-        getGrid(1, FormInputs.modalidad.value, FormInputs.ciudad.value, FormInputs.barrio.value, FormInputs.estrato.value,
-            FormInputs.codigo.value, FormInputs.tipo.value, FormInputs.habitaciones.value, FormInputs.baños.value,
-            FormInputs.parqueaderos.value, FormInputs.minprecio.value, FormInputs.maxprecio.value);
+        if (ElementGrid) {
+            ElementGrid.innerHTML = "";
+            ElementGrid.innerHTML = loader;
+            getGrid(1, FormInputs.modalidad.value, FormInputs.ciudad.value, FormInputs.barrio.value, FormInputs.estrato.value,
+                FormInputs.codigo.value, FormInputs.tipo.value, FormInputs.habitaciones.value, FormInputs.baños.value,
+                FormInputs.parqueaderos.value, FormInputs.minprecio.value, FormInputs.maxprecio.value);
+        }
     })
     if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/") {
         getBarrios(1);

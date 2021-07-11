@@ -16,6 +16,7 @@ var carrusetItemEnd = '</div></div>';
 document.addEventListener('DOMContentLoaded', () => {
     var ContainerBullets = document.getElementById('Bullets');
     var ContainerDestacados = document.getElementById('DestacadoContainer');
+    var FormBusqueda = document.getElementById('Busqueda');
 
     function PostBullets() {
         if (ContainerBullets) {
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         config.params = {
             page: pagina,
             great: "on"
-        }
+        };
         axios.get(API.Api_Url + API.ProGrid_Ep, config)
             .then(response => {
                 Inmuebles = response.data.data;
@@ -113,5 +114,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(error);
             })
     }
+
+    FormBusqueda.addEventListener("submit", (event) => {
+        event.preventDefault();
+        var FormInputs = {
+            codigo: document.querySelector('[name="codigo"]'),
+            modalidad: document.querySelector('[name="modalidad"]'),
+            tipo: document.querySelector('[name="tipo"]')
+        }
+        console.log(FormInputs);
+        if (FormInputs.modalidad.value === "1") {
+            window.location.href = Base_url + "/busqueda/arriendo/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+        }
+        else if (FormInputs.modalidad.value === "2") {
+            window.location.href = Base_url + "/busqueda/ventas/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+        }
+        else {
+            window.location.href = Base_url + "/busqueda/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+        }
+    })
     getGrid(1);
 })
