@@ -30,6 +30,8 @@ var ProDetail = {
     parqueaderoCubiertos: "",
     estrato: "",
     año_construccion: "",
+    latitud: "",
+    longitud: "",
     images: [],
     asesor: {},
     amenities: [],
@@ -61,6 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
     var InfoPropertyLlamada = document.getElementById('InfoPropertyLlamada');
     var InfoPropertycaracteristicas = document.getElementById('InfoPropertycaracteristicas');
     var ContainerBullets = document.getElementById('Bullets');
+    var MapContainer = document.getElementById('map');
+
+    function Map() {
+        var map = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d835.9443634785328!2d' + ProDetail.longitud + '!3d' + ProDetail.latitud + '!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1624373665419!5m2!1ses-419!2sco" width="100%" height="700" style="border:0;" allowfullscreen loading="lazy"></iframe>';
+        MapContainer.innerHTML = map;
+    }
 
     function loadMainDettale(titulo, ciudad, modalidad, habitaciones, baños, parqueaderos, area, codigo, precio, administracion) {
         var col1 = `        
@@ -243,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ProDetail.caracteristicas.forEach(element => {
             ele3 = `        
             <div class="col-12 px-0">
-                <div class="pt-3">
+                <div class="pt-1">
                     <p class="mb-0">`+ element.name + `</p>
                     <span class="font-weight-bold float-right">`+ element.ele + `</span>
                 </div>
@@ -280,6 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     estrato: property.stratum,
                     año_construccion: property.build_year,
                     images: property.images,
+                    latitud: parseFloat(property.latitude),
+                    longitud: parseFloat(property.longitude),
                     asesor: property.broker[0],
                     amenities: property.amenities,
                     caracteristicas: [{ ele: property.bedrooms, name: 'Habitaciones' }, { ele: property.bathrooms, name: 'Baños' }, { ele: property.parking, name: 'Parqueaderos' }, { ele: property.area_cons, name: 'Area m2' }, { ele: property.build_year, name: 'Año de construcción' }, { ele: property.address, name: 'Dirección' }, , { ele: property.zone, name: 'Zona' }]
@@ -298,6 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bandera = true;
                 loadBarraAsesor();
                 getSimilares(1, 3, property.biz_code, property.city_code, property.type_code, ProDetail.habitaciones, ProDetail.baños, property.price - 300000000, property.price + 300000000);
+                Map();
             })
             .catch(error => {
                 console.log(error);
