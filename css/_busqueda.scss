@@ -138,12 +138,12 @@ section.resultados {
   nav {
     ul {
       li.active {
-        a {
+        button {
           background-color: $SecondBlue !important;
           color: white !important;
         }
       }
-      a.page-link {
+      button.page-link {
         border-radius: 10px;
         border: none;
         text-shadow: none;

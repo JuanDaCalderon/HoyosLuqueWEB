@@ -272,6 +272,8 @@
     $item.height($wHeight);
 </script>
 
+<script type="module" src="<?php echo $base_url ?>/js/Home.js"></script>
+
 <?php 
     require_once 'includes/footer.php';
 ?>

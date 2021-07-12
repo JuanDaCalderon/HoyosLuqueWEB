@@ -28,8 +28,50 @@ var loader = `
     </div>
     `;
 
+var HomeParams = {
+    codigo: "",
+    tipo: ""
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     var FormBusqueda = document.getElementById('Busqueda');
+    var ContainerPag = document.getElementById('paginacion');
+    var PageSubmit = document.getElementById('PageSubmit');
+    function Paginacion() {
+        ContainerPag.innerHTML = "";
+        var First = `
+        <li class="page-item px-1">
+            <button value="`+ ((gridData.currentPage) - 1) + `" type="submit" name="pagina" class="page-link" tabindex="-1">Anterior</button>
+        </li>
+        <li class="page-item px-1">
+            <button value="`+ ((gridData.currentPage) - 1) + `" type="submit" name="pagina" class="page-link">` + ((gridData.currentPage) - 1) + `</button>
+        </li>
+        `;
+        var Current = `
+        <li class="page-item px-1 active disabled">
+            <button class="page-link">`+ gridData.currentPage + `</button>
+        </li>`;
+        var Second = `
+        <li class="page-item px-1">
+            <button value="`+ ((gridData.currentPage) + 1) + `" type="submit" name="pagina" class="page-link">` + ((gridData.currentPage) + 1) + `</button>
+        </li>
+        <li class="page-item px-1">
+            <button value="`+ ((gridData.currentPage) + 1) + `" type="submit" name="pagina" class="page-link">Siguiente</button>
+        </li>
+        `;
+
+        if (ContainerPag) {
+            if (gridData.currentPage !== 1) {
+                ContainerPag.innerHTML += First;
+            }
+            ContainerPag.innerHTML += Current;
+            if (gridData.currentPage !== gridData.LastPage) {
+                ContainerPag.innerHTML += Second;
+            }
+        }
+
+    }
 
     function ImprimeBarrios() {
         var idBarrio = document.getElementById('Barrio');
@@ -145,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function getGrid(pagina, modalidad, ciudad, barrio, estrato, codigo, tipo, habitaciones, baños, parqueaderos, minprecio, maxprecio) {
+    function getGrid(pagina, modalidad, codigo, tipo, estrato, ciudad, barrio, habitaciones, baños, parqueaderos, minprecio, maxprecio) {
         if (codigo === "") { codigo = undefined; };
         if (ciudad === "") { ciudad = undefined; };
         if (barrio === "") { barrio = undefined; };
@@ -185,17 +227,26 @@ document.addEventListener('DOMContentLoaded', () => {
         axios.get(API.Api_Url + API.ProGrid_Ep, config)
             .then(response => {
                 Inmuebles = response.data.data;
-                gridData.currentPage = response.data.current_page;
-                gridData.LastPage = response.data.last_page;
-                gridData.From = response.data.from;
-                gridData.To = response.data.to;
-                gridData.Total = response.data.total;
+                gridData = {
+                    ...gridData,
+                    currentPage: response.data.current_page,
+                    LastPage: response.data.last_page,
+                    From: response.data.from,
+                    To: response.data.to,
+                    Total: response.data.total
+                }
+                /*                 gridData.currentPage = response.data.current_page;
+                                gridData.LastPage = response.data.last_page;
+                                gridData.From = response.data.from;
+                                gridData.To = response.data.to;
+                                gridData.Total = response.data.total; */
                 if (ElementLoad) {
                     ElementLoad.classList.remove('d-block');
                     ElementLoad.classList.add('d-none');
                 }
                 loadCounter();
                 loadGrid();
+                Paginacion();
             })
             .catch(error => {
                 console.log(error);
@@ -221,21 +272,118 @@ document.addEventListener('DOMContentLoaded', () => {
         if (ElementGrid) {
             ElementGrid.innerHTML = "";
             ElementGrid.innerHTML = loader;
-            getGrid(1, FormInputs.modalidad.value, FormInputs.ciudad.value, FormInputs.barrio.value, FormInputs.estrato.value,
-                FormInputs.codigo.value, FormInputs.tipo.value, FormInputs.habitaciones.value, FormInputs.baños.value,
+            getGrid(1, FormInputs.modalidad.value, FormInputs.codigo.value, FormInputs.tipo.value, FormInputs.estrato.value,
+                FormInputs.ciudad.value, FormInputs.barrio.value, FormInputs.habitaciones.value, FormInputs.baños.value,
                 FormInputs.parqueaderos.value, FormInputs.minprecio.value, FormInputs.maxprecio.value);
         }
     })
+
+
+    function cambiarPagina(newPage, modalidad) {
+        var ElementGrid = document.getElementById('Grid');
+        var FormInputs = {
+            ciudad: document.querySelector('[name="ciudad"]'),
+            barrio: document.querySelector('[name="barrio"]'),
+            estrato: document.querySelector('[name="estrato"]'),
+            minprecio: document.querySelector('[name="minprecio"]'),
+            maxprecio: document.querySelector('[name="maxprecio"]'),
+            codigo: document.querySelector('[name="codigo"]'),
+            modalidad: document.querySelector('[name="modalidad"]'),
+            tipo: document.querySelector('[name="tipo"]'),
+            habitaciones: document.querySelector('[name="habitaciones"]'),
+            baños: document.querySelector('[name="baños"]'),
+            parqueaderos: document.querySelector('[name="parqueaderos"]')
+        }
+        if (ElementGrid) {
+            ElementGrid.innerHTML = "";
+            ElementGrid.innerHTML = loader;
+            getGrid(newPage, modalidad, FormInputs.codigo.value, FormInputs.tipo.value, FormInputs.estrato.value,
+                FormInputs.ciudad.value, FormInputs.barrio.value, FormInputs.habitaciones.value, FormInputs.baños.value,
+                FormInputs.parqueaderos.value, FormInputs.minprecio.value, FormInputs.maxprecio.value);
+        }
+    }
+
+    /* START APPP */
     if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/") {
         getBarrios(1);
-        getGrid(1);
+        if (document.referrer === Base_url + "/") {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            HomeParams = {
+                codigo: parametros.get("cod"),
+                tipo: parametros.get("tipo")
+            }
+            if (HomeParams.codigo === null && HomeParams.tipo === null) {
+                getGrid(1);
+            }
+            else {
+                getGrid(1, "", HomeParams.codigo, HomeParams.tipo);
+            }
+        }
+        else {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            if (parametros.has("pagina")) {
+                cambiarPagina(parametros.get("pagina"));
+            }
+            else {
+                getGrid(1);
+            }
+        }
     }
     else if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/ventas/") {
         getBarrios(1);
-        getGrid(1, 2);
+        if (document.referrer === Base_url + "/") {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            HomeParams = {
+                codigo: parametros.get("cod"),
+                tipo: parametros.get("tipo")
+            }
+            if (HomeParams.codigo === null && HomeParams.tipo === null) {
+                getGrid(1, 2);
+            }
+            else {
+                getGrid(1, 2, HomeParams.codigo, HomeParams.tipo);
+            }
+        }
+        else {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            if (parametros.has("pagina")) {
+                cambiarPagina(parametros.get("pagina"), 2);
+            }
+            else {
+                getGrid(1, 2);
+            }
+        }
     }
     else if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/arriendo/") {
         getBarrios(1);
-        getGrid(1, 1);
+        if (document.referrer === Base_url + "/") {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            HomeParams = {
+                codigo: parametros.get("cod"),
+                tipo: parametros.get("tipo")
+            }
+            if (HomeParams.codigo === null && HomeParams.tipo === null) {
+                getGrid(1, 1);
+            }
+            else {
+                getGrid(1, 1, HomeParams.codigo, HomeParams.tipo);
+            }
+        }
+        else {
+            var URLParams = window.location.search;
+            var parametros = new URLSearchParams(URLParams);
+            if (parametros.has("pagina")) {
+                cambiarPagina(parametros.get("pagina"), 1);
+            }
+            else {
+                getGrid(1, 1);
+            }
+
+        }
     }
 })

@@ -10,8 +10,6 @@ var gridData = {
 }
 var Inmuebles;
 
-var carrusetItem = '<div class="carousel-item"><div class="row">';
-var carrusetItemEnd = '</div></div>';
 
 document.addEventListener('DOMContentLoaded', () => {
     var ContainerBullets = document.getElementById('Bullets');
@@ -122,15 +120,14 @@ document.addEventListener('DOMContentLoaded', () => {
             modalidad: document.querySelector('[name="modalidad"]'),
             tipo: document.querySelector('[name="tipo"]')
         }
-        console.log(FormInputs);
         if (FormInputs.modalidad.value === "1") {
-            window.location.href = Base_url + "/busqueda/arriendo/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "/busqueda/arriendo/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
         else if (FormInputs.modalidad.value === "2") {
-            window.location.href = Base_url + "/busqueda/ventas/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "/busqueda/ventas/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
         else {
-            window.location.href = Base_url + "/busqueda/" + "?cod=" + FormInputs.codigo.value + "?tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "/busqueda/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
     })
     getGrid(1);

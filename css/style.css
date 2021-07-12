@@ -904,12 +904,12 @@ section.resultados .card .card-body div.customtext p {
   font-size: 1.2em;
 }
 
-section.resultados nav ul li.active a {
+section.resultados nav ul li.active button {
   background-color: #4f76b0 !important;
   color: white !important;
 }
 
-section.resultados nav ul a.page-link {
+section.resultados nav ul button.page-link {
   border-radius: 10px;
   border: none;
   text-shadow: none;
@@ -919,7 +919,7 @@ section.resultados nav ul a.page-link {
   letter-spacing: 1px;
 }
 
-section.resultados nav ul a.page-link:hover {
+section.resultados nav ul button.page-link:hover {
   background-color: #4f76b0;
   color: white;
 }
@@ -1149,6 +1149,10 @@ ol.carousel-indicators.galeria li {
   background-color: #4f76b0;
 }
 
+section#detalleimages img {
+  object-fit: cover !important;
+}
+
 section.ubicacion h2 {
   color: #0060a2;
   font-size: 4em;
@@ -1166,7 +1170,7 @@ section.ubicacion iframe {
 }
 
 section.Detalle li {
-  font-size: 18px;
+  font-size: 14px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   list-style-type: square;
@@ -1222,12 +1226,14 @@ section.Detalle hr.Barra.caracteristica {
   margin-bottom: 1rem;
 }
 
-section.Detalle button {
+section.Detalle button,
+section.Detalle a {
   background-color: #0060a2;
   border-color: #0060a2;
 }
 
-section.Detalle button:hover {
+section.Detalle button:hover,
+section.Detalle a:hover {
   background-color: #004d80;
   border-color: #004d80;
 }

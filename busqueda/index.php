@@ -18,7 +18,7 @@
                     <div class="col-12 col-lg-2 px-0 pr-lg-2 pl-md-0">
                         <label class="mb-0" for="Ciudad">CIUDAD</label>
                         <select name="ciudad" class="form-control rounded-0" id="Ciudad">
-                            <option value="" selected disabled>Todos</option>
+                            <option value="" selected>Todos</option>
                             <option value="11001">Bogotá</option>
                             <option value="76001">Cali</option>
                             <option value="13001">Cartagena</option>
@@ -27,13 +27,13 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="Barrio">BARRIO</label>
                         <select name="barrio" class="form-control rounded-0" id="Barrio">
-                            <option value="" selected disabled>Todos</option>
+                            <option value="" selected>Todos</option>
                         </select>
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="Estrato">ESTRATO</label>
                         <select name="estrato" class="form-control rounded-0" id="Estrato">
-                            <option value="" selected disabled>Todos</option>
+                            <option value="" selected>Todos</option>
                             <option value="6">6</option>
                             <option value="5">5</option>
                             <option value="4">4</option>
@@ -55,7 +55,7 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="PrecioHasta">PRECIO HASTA</label>
                         <select name="maxprecio" class="form-control rounded-0" id="PrecioHasta">
-                            <option value="" selected disabled>0</option>
+                            <option value="" selected>0</option>
                             <option value="500000000">500.000.000</option>
                             <option value="1000000000">1.000.000.000</option>
                             <option value="1500000000">1.500.000.000</option>
@@ -70,7 +70,7 @@
                     <div class="col-12 col-lg-2 px-0 pr-lg-2 pl-md-0 d-none d-md-block">
                         <label class="mb-0" for="Modalidad">MODALIDAD</label>
                         <select name="modalidad" class="form-control rounded-0" id="Modalidad">
-                            <option value="" selected disabled>Todos</option>
+                            <option value="" selected>Todos</option>
                             <option value="2">Venta</option>
                             <option value="1">Arriendo</option>
                         </select>
@@ -78,7 +78,7 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="TipoInmueble">TIPO DE INMUEBLE</label>
                         <select name="tipo" class="form-control rounded-0" id="TipoInmueble">
-                            <option value="" selected disabled>Todos</option>
+                            <option value="" selected>Todos</option>
                             <option value="1">Apartamento</option>
                             <option value="2">Casa</option>
                             <option value="3">Apartaestudio</option>
@@ -92,7 +92,7 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumHabitaciones">Numero de habitaciones</label>
                         <select name="habitaciones" class="form-control rounded-0" id="NumHabitaciones">
-                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="" selected>Es irrelevante</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -104,7 +104,7 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumBaños">Numero de Baños</label>
                         <select name="baños" class="form-control rounded-0" id="NumBaños">
-                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="" selected>Es irrelevante</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -117,7 +117,7 @@
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="NumParqueaderos">Numero de Parqueaderos</label>
                         <select name="parqueaderos" class="form-control rounded-0" id="NumParqueaderos">
-                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="" selected>Es irrelevante</option>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -149,20 +149,13 @@
           </div>
         </div>
         <nav aria-label="Page navigation resultados">
-          <ul class="pagination justify-content-center mt-4">
-            <li class="page-item px-1 disabled">
-              <a class="page-link " href="#" tabindex="-1">Anterior</a>
-            </li>
-            <li class="page-item px-1 active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item px-1"><a class="page-link" href="#">2</a></li>
-            <li class="page-item px-1"><a class="page-link" href="#">3</a></li>
-            <li class="page-item px-1">
-              <a class="page-link" href="#">Siguiente</a>
-            </li>
-          </ul>
+            <form id="PageSubmit">
+                <ul id="paginacion" class="pagination justify-content-center mt-4">
+                </ul>
+            </form>
         </nav>
 </section>
-
+<script type="module" src="<?php echo $base_url ?>/js/Grid.js"></script>
 <?php 
     require_once '../includes/footer.php';
 ?>

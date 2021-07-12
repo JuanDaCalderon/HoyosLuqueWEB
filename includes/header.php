@@ -25,6 +25,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Favicon -->
         <link rel="icon" href="<?php echo $base_url?>/assets/favicon.png" type="image/png" />
+        <!-- AXIOS -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
 
     <body id="main-content" class="new-nav-bar">
