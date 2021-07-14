@@ -1,6 +1,10 @@
 'use strict'
 import { API, config } from './Variables.js';
-var Base_url = "http://localhost/HoyosLuqueWEB";
+//var paths = "/HoyosLuqueWEB/busqueda/";
+var paths = "/HoyosLuque/busqueda/";
+
+//var Base_url = "http://localhost/HoyosLuqueWEB";
+var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
 var code = "";
 var bandera = true;
 var gridData = {

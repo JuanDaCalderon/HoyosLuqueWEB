@@ -1,6 +1,6 @@
 <?php
-    //$base_url="https://www.hoyosluque.com/";
-    $base_url="http://localhost/HoyosLuqueWEB"; 
+    $base_url="https://www.proyectodomus.com/HoyosLuque";
+    //$base_url="http://localhost/HoyosLuqueWEB"; 
 ?>
 <!doctype html>
 <html lang="es">
@@ -41,28 +41,34 @@
 
                 <div class="collapse navbar-collapse pr-5" id="MainNavBar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="mx-4 nav-item active">
+                        <li class="mx-4 nav-item">
                             <a class="nav-link" href="<?php echo $base_url?>/quienes-somos">QUIÉNES SOMOS</a>
                         </li>
-                        <li class="mx-4 nav-item dropdown">
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link" href="<?php echo $base_url?>/busqueda/ventas">VENTA</a>
+                        </li>
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link" href="<?php echo $base_url?>/busqueda/arriendo">ARRIENDO</a>
+                        </li>
+<!--                         <li class="mx-4 nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
                             <div class="dropdown-menu ServiciosDropDown my-0 py-1" aria-labelledby="dropdownServicios">
                                 <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/ventas">VENTA</a>
                                 <hr class="my-0">
                                 <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/arriendo">ARRIENDO</a>
                             </div>
+                        </li> -->
+                        <li class="mx-4 nav-item">
+                            <a class="nav-link" href="<?php echo $base_url?>/inquilinos">INQUILINOS</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link" href="<?php echo $base_url?>/Inquilinos">INQUILINOS</a>
-                        </li>
-                        <li class="mx-4 nav-item">
-                            <a class="nav-link" href="<?php echo $base_url?>/Propietarios">PROPIETARIOS</a>
+                            <a class="nav-link" href="<?php echo $base_url?>/propietarios">PROPIETARIOS</a>
                         </li>
                         <li class="mx-4 nav-item">
                             <a class="nav-link" href="<?php echo $base_url?>/#Contacto">CONTACTO</a>
                         </li>
                         <li class="mx-4 nav-item">
-                            <a class="nav-link" href="<?php echo $base_url?>/PQRSF">PQRSF</a>
+                            <a class="nav-link" href="<?php echo $base_url?>/pqrsf">PQRSF</a>
                         </li>
                         <li class="mx-4 nav-item">
                             <a class="nav-link" href="http://199.189.87.44/hoyosluque/">COLABORADORES</a>

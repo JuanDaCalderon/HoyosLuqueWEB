@@ -8,7 +8,7 @@
 </section>
 
 
-<section class="container-fluid py-5 px-6 propietarios">
+<section id="SectionHeight" class="container-fluid py-5 px-6 propietarios">
   <div class="row p-0 pb-4">
     <div class="col-12 col-lg-auto">
       <h2 class="d-block d-lg-inline-block m-0"> A TENER EN CUENTA </h2>
@@ -28,6 +28,13 @@
     </div>
  </div> 
 </section>
+
+<script>
+    var $item2 = $('#SectionHeight');
+    var $wHeight2 = window.innerHeight - 630;
+    $item2.height($wHeight2);
+</script>
+
 <?php 
     require_once '../includes/footer.php';
 ?>

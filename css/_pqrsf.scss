@@ -13,6 +13,13 @@ section.coverInternasP {
       font-size: 6.2em;
       text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
     }
+    p#pqrsffont {
+      span {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+      }
+    }
   }
 }
 

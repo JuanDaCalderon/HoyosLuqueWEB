@@ -437,18 +437,29 @@ section.Map div.direccion p {
   font-size: 1.1em;
 }
 
-section.Map button {
+section.Map button,
+section.Map a {
   background-color: #0060a2;
   border-color: #0060a2;
 }
 
-section.Map button:hover {
+section.Map button:hover,
+section.Map a:hover {
   background-color: #004d80;
   border-color: #004d80;
 }
 
+section.Map a.redIcon {
+  background-color: transparent;
+}
+
 section.Map a.redIcon:hover {
-  font-size: 2em;
+  font-size: 2.5em;
+}
+
+section.Map a.Map:hover {
+  display: inline-block;
+  opacity: 0.8;
 }
 
 @media (max-width: 1630px) {
@@ -1508,6 +1519,12 @@ section.coverInternasP div.wrap {
 section.coverInternasP div.wrap h1 {
   font-size: 6.2em;
   text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+section.coverInternasP div.wrap p#pqrsffont span {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
 }
 
 section.pqrsf hr.Barra {

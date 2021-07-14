@@ -225,7 +225,7 @@
             <p>Calle 119 #14-42 Oficina 302</p>
           </div>
         </div>
-          <button class="btn btn-primary w-100 rounded-0 font-weight-bold">VER UBICACIÓN</button>
+          <a target="_blank" href="https://goo.gl/maps/nyA1AxQoVjVQvyGL9" class="btn btn-primary w-100 rounded-0 font-weight-bold">VER UBICACIÓN</a>
         <div class="row pt-4 px-2">
           <div class="col-2 px-2">
             <a class="redIcon" href="#">
@@ -254,14 +254,16 @@
           </div>
           <div class="col-2 px-2">
             <a class="redIcon" href="#">
-              <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/YoutubeIcon.png" alt="Youtube">
+              <img class="img-fluid" src="<?php echo $base_url ?>/assets/YouTube.png" alt="Youtube">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="col-12 col-lg-6 px-0 px-lg-2">
-      <img class="img-fluid mapa" src="<?php echo $base_url ?>/assets/Home/Mapa.png" alt="Youtube">
+      <a class="Map" style="background-color:transparent" target="_blank" href="https://goo.gl/maps/nyA1AxQoVjVQvyGL9">
+        <img class="img-fluid mapa" src="<?php echo $base_url ?>/assets/Home/Mapa.png" alt="Youtube">
+      </a>
     </div>
   </div>
 </section>

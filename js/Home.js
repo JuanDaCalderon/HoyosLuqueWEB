@@ -1,6 +1,10 @@
 'use strict'
 import { API, config } from './Variables.js';
-var Base_url = "http://localhost/HoyosLuqueWEB";
+//var paths = "/HoyosLuqueWEB/busqueda/";
+var paths = "/HoyosLuque/busqueda/";
+
+//var Base_url = "http://localhost/HoyosLuqueWEB";
+var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
 var gridData = {
     currentPage: 0,
     LastPage: 0,
@@ -121,14 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
             tipo: document.querySelector('[name="tipo"]')
         }
         if (FormInputs.modalidad.value === "1") {
-            window.location.href = Base_url + "/busqueda/arriendo/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "busqueda/arriendo/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
         else if (FormInputs.modalidad.value === "2") {
-            window.location.href = Base_url + "/busqueda/ventas/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "busqueda/ventas/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
         else {
-            window.location.href = Base_url + "/busqueda/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
+            window.location.href = Base_url + "busqueda/" + "?cod=" + FormInputs.codigo.value + "&tipo=" + FormInputs.tipo.value;
         }
     })
+
     getGrid(1);
 })

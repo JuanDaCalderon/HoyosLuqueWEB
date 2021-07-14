@@ -1,6 +1,11 @@
 'use strict'
 import { API, config } from './Variables.js';
-var Base_url = "http://localhost/HoyosLuqueWEB";
+
+//var paths = "/HoyosLuqueWEB/busqueda/";
+var paths = "/HoyosLuque/busqueda/";
+
+//var Base_url = "http://localhost/HoyosLuqueWEB";
+var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
 var urlinfo = window.location;
 var AuxgridData = {
     currentPage: 0,
@@ -304,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* START APPP */
-    if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/") {
+    if (urlinfo.pathname === paths) {
         getBarrios(1);
         if (document.referrer === Base_url + "/") {
             var URLParams = window.location.search;
@@ -331,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    else if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/ventas/") {
+    else if (urlinfo.pathname === paths + "ventas/") {
         getBarrios(1);
         if (document.referrer === Base_url + "/") {
             var URLParams = window.location.search;
@@ -358,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    else if (urlinfo.pathname === "/HoyosLuqueWEB/busqueda/arriendo/") {
+    else if (urlinfo.pathname === paths + "arriendo/") {
         getBarrios(1);
         if (document.referrer === Base_url + "/") {
             var URLParams = window.location.search;

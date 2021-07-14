@@ -2,12 +2,13 @@
     require_once '../includes/header.php';
 ?>
 <section class="coverInternasP">
-    <div class="wrap w-100 h-100 p-5 d-flex flex-column justify-content-center align-items-center">
-        <h1 class="text-white text-center m-0 pt-5">PQRSF</h1>        
+    <div class="wrap w-100 h-100 p-5 d-flex flex-column justify-content-end align-items-center">
+        <h1 class="text-white text-center m-0 pt-5">PQRSF</h1>  
+        <p id="pqrsffont" class="text-uppercase font-weight-light text-white text-center m-0 pb-4"> <span>P</span>reguntas - <span>Q</span>uejas- <span>R</span>eclamos - <span>S</span>ugerencias - <span>F</span>elicitaciones</p>      
     </div>
 </section>
 
-<section class="container-fluid py-5 px-6 pqrsf">
+<section id="SectionHeight" class="container-fluid py-5 px-6 pqrsf">
     <div class="mb-6">
      <div class="col d-flex align-items-center mb-2 mb-lg-5">
          <hr class="Barra w-100">
@@ -22,6 +23,13 @@
      </div>  
     </div>  
 </section>
+
+<script>
+    var $item2 = $('#SectionHeight');
+    var $wHeight2 = window.innerHeight - 630;
+    $item2.height($wHeight2);
+</script>
+
 <?php 
     require_once '../includes/footer.php';
 ?>
