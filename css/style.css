@@ -1424,6 +1424,10 @@ section.galeria a.btn-floating.next {
   section.Detalle h5 {
     font-size: 2em;
   }
+  div.ListaCaracteristicas p,
+  div.ListaCaracteristicas span {
+    font-size: 14px !important;
+  }
 }
 
 section.coverInternasQ {

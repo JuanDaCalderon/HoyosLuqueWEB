@@ -3,7 +3,7 @@ import { API, config } from './Variables.js';
 //var paths = "/HoyosLuqueWEB/busqueda/";
 var paths = "/HoyosLuque/busqueda/";
 
-//var Base_url = "http://localhost/HoyosLuqueWEB";
+//var Base_url = "http://localhost/HoyosLuqueWEB/";
 var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
 var code = "";
 var bandera = true;
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadAmenities(index, page) {
         var ContainerAmenitie = document.getElementById('RowAmenities');
-        ContainerAmenitie.innerHTML += '<div class="col-12 col-sm-3"><ul id="ulListAmenities' + page + '"></div></ul>';
+        ContainerAmenitie.innerHTML += '<div class="col-12 col-sm-3"><ul class="m-0" id="ulListAmenities' + page + '"></div></ul>';
         var perpage = 4;
         for (; index < ProDetail.amenities.length; index++) {
             if (index < perpage * page) {
@@ -255,11 +255,11 @@ document.addEventListener('DOMContentLoaded', () => {
         ProDetail.caracteristicas.forEach(element => {
             ele3 = `        
             <div class="col-12 px-0">
-                <div class="pt-1">
+                <div class="features pt-1">
                     <p class="mb-0">`+ element.name + `</p>
                     <span class="font-weight-bold float-right">`+ element.ele + `</span>
                 </div>
-                <hr class="Barra w-100">
+                <hr class="Barra w-100 my-2 my-md-3">
             </div>`;
             InfoPropertycaracteristicas.innerHTML += ele3;
         });

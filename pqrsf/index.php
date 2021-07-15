@@ -26,7 +26,7 @@
 
 <script>
     var $item2 = $('#SectionHeight');
-    var $wHeight2 = window.innerHeight - 630;
+    var $wHeight2 = window.innerHeight;
     $item2.height($wHeight2);
 </script>
 
