@@ -308,10 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     /* START APPP */
     if (urlinfo.pathname === paths) {
         getBarrios(1);
-        if (document.referrer === Base_url + "/") {
+        if (document.referrer === Base_url) {
             var URLParams = window.location.search;
             var parametros = new URLSearchParams(URLParams);
             HomeParams = {
@@ -338,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else if (urlinfo.pathname === paths + "ventas/") {
         getBarrios(1);
-        if (document.referrer === Base_url + "/") {
+        if (document.referrer === Base_url) {
             var URLParams = window.location.search;
             var parametros = new URLSearchParams(URLParams);
             HomeParams = {
@@ -365,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else if (urlinfo.pathname === paths + "arriendo/") {
         getBarrios(1);
-        if (document.referrer === Base_url + "/") {
+        if (document.referrer === Base_url) {
             var URLParams = window.location.search;
             var parametros = new URLSearchParams(URLParams);
             HomeParams = {

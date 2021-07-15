@@ -13,7 +13,7 @@
     </div>
 </section>
 
-<section id="detalleimages" class="d-none d-md-block container-fluid pt-2 pb-2 px-0 galeria">
+<section id="detalleimages" class="d-md-block container-fluid pt-2 pb-2 px-0 galeria">
   <!-- CAROUSEL -->
   <div id="multi-item-galery" class="carousel slide carousel-multi-item" data-ride="carousel">
     <!--Slides-->
