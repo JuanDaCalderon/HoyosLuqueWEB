@@ -117,12 +117,14 @@ section.destacados {
   border-radius: 0;
   img.card-img-top {
     height: 365px !important;
-    object-fit: none;
+    object-fit: contain;
+    background-color: #3b4054;
   }
 }
 #proyectoscards {
   img.card-img-top {
     object-fit: cover !important;
+    background-color: #3b4054;
   }
 }
 .controls-top {

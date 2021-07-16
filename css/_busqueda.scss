@@ -110,7 +110,8 @@ section.resultados {
     box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.08);
     img.card-img-top {
       height: 365px !important;
-      object-fit: none;
+      object-fit: contain;
+      background-color: #3b4054;
     }
     img.tipo {
       width: 40px;
