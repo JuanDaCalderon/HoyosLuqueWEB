@@ -228,32 +228,32 @@
           <a target="_blank" href="https://goo.gl/maps/nyA1AxQoVjVQvyGL9" class="btn btn-primary w-100 rounded-0 font-weight-bold">VER UBICACIÓN</a>
         <div class="row pt-4 px-2">
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="https://www.facebook.com/HoyosLuque/">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/FacebookIcon.png" alt="Facebook">
             </a>
           </div>
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="https://www.instagram.com/hoyos_luque/">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/InstagramIcon.png" alt="Instagram">
             </a>
           </div>
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="https://co.pinterest.com/hoyos_luque/">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/PinterestIcon.png" alt="Twitter">
             </a>
           </div>
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="<?php echo $base_url ?>">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/WhatsappIcon.png" alt="Whatsapp">
             </a>
           </div>
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="https://www.linkedin.com/company/hoyos-luque/">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/LinkedinIcons.png" alt="Linkedin">
             </a>
           </div>
           <div class="col-2 px-2">
-            <a class="redIcon" href="#">
+            <a class="redIcon" target="_blank" href="https://www.youtube.com/channel/UCwAYgu0Ro7wEc3v2JZLRJxQ">
               <img class="img-fluid" src="<?php echo $base_url ?>/assets/YouTube.png" alt="Youtube">
             </a>
           </div>
