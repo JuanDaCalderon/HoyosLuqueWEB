@@ -1,7 +1,7 @@
 <?php 
     require_once '../includes/header.php';
 ?>
-<section class="coverInternasI">
+<section id="sectionBannerHeader" class="coverInternasI">
     <div class="wrap w-100 h-100 p-2 p-lg-5 d-flex flex-column justify-content-end">
         <h1 class="text-white text-left m-0 pt-5 px-4 px-sm-5">INQUILINOS</h1>
         <p class="text-white text-left px-4 px-sm-5 ">Botones habilitados a partir <br> del <span class="font-weight-bold">segundo día</span> hábil de <br>cada mes.</p>
@@ -9,7 +9,7 @@
 </section>
 
 
-<section id="SectionHeight" class="container-fluid py-5 px-6 inquilinos">
+<section id="SectionHeight" class="container-fluid py-5 pb-lg-0 px-6 inquilinos">
   <div class="row p-0 pb-4">
     <div class="col-12 col-lg-auto">
       <h2 class="d-block d-lg-inline-block m-0"> A TENER EN CUENTA </h2>
@@ -37,18 +37,12 @@
             <a target="_blank" href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/banco-de-occidente/resultado-busqueda/realizar-pago-facturadores?idConv=00003315&origen=buscar"><img class="img-fluid" src="../assets/pse.png" alt="Pse"></a>
         </div>
         <div class="col-12 col-lg-6 d-flex justify-content-center">
-            <a target="_blank" href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=441&tipo=2"><img class="img-fluid" src="../assets/BarCode.png" alt="Codigo de barras"></a>
+            <a target="_blank" href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=441&tipo=2"><img class="img-fluid" src="../assets/CodigoBarras.png" alt="Codigo de barras"></a>
         </div>
     </div>
 
  </div> 
 </section>
-
-<script>
-    var $item2 = $('#SectionHeight');
-    var $wHeight2 = window.innerHeight;
-    $item2.height($wHeight2);
-</script>
 
 <?php 
     require_once '../includes/footer.php';

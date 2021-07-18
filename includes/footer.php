@@ -1,4 +1,4 @@
-        <footer class="footer mt-auto">
+        <footer id="footer" class="footer mt-auto">
             <div class="container-fluid">
                 <div class="row">
                     <div class="d-flex align-items-center col-12 col-lg-8 text-white py-4 px-5">
@@ -22,3 +22,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<script>
+    var $item2 = $('#SectionHeight');
+    var $item3 = $('#sectionBannerHeader');
+    var $item4 = $('#footer');
+    var ancho = $item3.height();
+    var anchof = $item4.height();
+    var $wHeight2 = window.innerHeight - ancho - anchof;
+    $item2.height($wHeight2);
+</script>

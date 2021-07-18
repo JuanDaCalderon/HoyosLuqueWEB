@@ -58,6 +58,9 @@ section.pqrsf {
 @media (min-width: $BreakPointLarge) {
 }
 @media (max-width: $BreakPointLarge) {
+  section#SectionHeight {
+    height: auto !important;
+  }
   .mb-6 {
     margin-bottom: 1rem !important;
   }

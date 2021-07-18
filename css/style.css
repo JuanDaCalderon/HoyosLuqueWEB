@@ -3,11 +3,7 @@
 @font-face {
   font-family: "IconosHL";
   src: url("../assets/fonts/IconosHL.eot?liy16o");
-  src: url("../assets/fonts/IconosHL.eot?liy16o#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/IconosHL.ttf?liy16o") format("truetype"),
-    url("../assets/fonts/IconosHL.woff?liy16o") format("woff"),
-    url("../assets/fonts/IconosHL.svg?liy16o#IconosHL") format("svg");
+  src: url("../assets/fonts/IconosHL.eot?liy16o#iefix") format("embedded-opentype"), url("../assets/fonts/IconosHL.ttf?liy16o") format("truetype"), url("../assets/fonts/IconosHL.woff?liy16o") format("woff"), url("../assets/fonts/IconosHL.svg?liy16o#IconosHL") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -258,11 +254,7 @@ section.destacados a.btn-primary {
 }
 
 section.destacados a.btn-primary:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
 section.destacados a.btn-primary p {
@@ -470,6 +462,12 @@ section.Map a.redIcon:hover {
 section.Map a.Map:hover {
   display: inline-block;
   opacity: 0.8;
+}
+
+.customThank {
+  position: absolute;
+  bottom: 335px;
+  left: 200px;
 }
 
 @media (max-width: 1630px) {
@@ -861,11 +859,7 @@ section.resultados a.btn-primary {
 }
 
 section.resultados a.btn-primary:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
 section.resultados a.btn-primary p {
@@ -1576,6 +1570,9 @@ section.pqrsf a:hover {
 /* 1200px */
 /* 992px */
 @media (max-width: 992px) {
+  section#SectionHeight {
+    height: auto !important;
+  }
   .mb-6 {
     margin-bottom: 1rem !important;
   }
@@ -1631,6 +1628,9 @@ section.propietarios div.text p {
   }
   section.propietarios hr.Barra {
     display: none;
+  }
+  section#SectionHeight {
+    height: auto !important;
   }
   .px-6 {
     padding-left: 3rem !important;
@@ -1710,6 +1710,9 @@ section.inquilinos p.textTenerEnCuenta {
   }
   section.inquilinos hr.Barra {
     display: none;
+  }
+  section#SectionHeight {
+    height: auto !important;
   }
   .px-6 {
     padding-left: 3rem !important;

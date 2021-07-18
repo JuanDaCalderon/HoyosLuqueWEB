@@ -182,24 +182,24 @@
     </div>
     <div class="col-12 col-xl">
       <div class="jumbotron contactoForm px-5 pb-5 pt-4 rounded-0">
-        <form>
+        <form action="send.php" method="post">
           <h2 class="color-FormBlue m-0 pt-2">CONTACTO</h2>
           <hr class="FormLine mt-0 mb-3">
           <div class="form-group">
             <label class="m-0" for="Name">NOMBRE*</label>
-            <input type="text" class="form-control rounded-0" id="Name" placeholder="Escribe tu nombre" required>
+            <input name="Nombre" type="text" class="form-control rounded-0" id="Name" placeholder="Escribe tu nombre" required>
           </div>
           <div class="form-group">
             <label class="m-0" for="Email">EMAIL*</label>
-            <input type="email" class="form-control rounded-0" id="Email" placeholder="Escribe tu email" required>
+            <input name="Email" type="email" class="form-control rounded-0" id="Email" placeholder="Escribe tu email" required>
           </div>
           <div class="form-group">
             <label class="m-0" for="Phone">TELÉFONO*</label>
-            <input type="text" class="form-control rounded-0" id="Phone" placeholder="Escribe tu teléfono" required>
+            <input name="Telefono" type="text" class="form-control rounded-0" id="Phone" placeholder="Escribe tu teléfono" required>
           </div>
           <div class="form-group">
             <label class="m-0" for="Mensaje">MENSAJE</label>
-            <textarea class="form-control rounded-0" id="Mensaje" rows="3" placeholder="Deja aquí tu mensaje"></textarea>
+            <textarea name="Mensaje" class="form-control rounded-0" id="Mensaje" rows="3" placeholder="Deja aquí tu mensaje" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary w-100 rounded-0 py-2">ENVIAR</button>
         </form>
@@ -239,7 +239,7 @@
           </div>
           <div class="col-2 px-2">
             <a class="redIcon" href="#">
-              <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/TwitterIcon.png" alt="Twitter">
+              <img class="img-fluid" src="<?php echo $base_url ?>/assets/Home/PinterestIcon.png" alt="Twitter">
             </a>
           </div>
           <div class="col-2 px-2">
