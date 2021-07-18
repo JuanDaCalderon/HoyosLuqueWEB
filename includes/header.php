@@ -1,6 +1,6 @@
 <?php
-    $base_url="https://www.proyectodomus.com/HoyosLuque";
-    //$base_url="http://localhost/HoyosLuqueWEB"; 
+    //$base_url="https://www.proyectodomus.com/HoyosLuque";
+    $base_url="http://localhost/HoyosLuqueWEB"; 
 ?>
 <!doctype html>
 <html lang="es">
@@ -38,7 +38,6 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNavBar" aria-controls="MainNavBar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse pr-5" id="MainNavBar">
                     <ul class="navbar-nav ml-auto">
                         <li class="mx-4 nav-item">
@@ -50,14 +49,6 @@
                         <li class="mx-4 nav-item">
                             <a class="nav-link" href="<?php echo $base_url?>/busqueda/arriendo">ARRIENDO</a>
                         </li>
-<!--                         <li class="mx-4 nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
-                            <div class="dropdown-menu ServiciosDropDown my-0 py-1" aria-labelledby="dropdownServicios">
-                                <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/ventas">VENTA</a>
-                                <hr class="my-0">
-                                <a class="dropdown-item" href="<?php echo $base_url?>/busqueda/arriendo">ARRIENDO</a>
-                            </div>
-                        </li> -->
                         <li class="mx-4 nav-item">
                             <a class="nav-link" href="<?php echo $base_url?>/inquilinos">INQUILINOS</a>
                         </li>
