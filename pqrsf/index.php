@@ -8,7 +8,7 @@
     </div>
 </section>
 
-<section id="SectionHeight" class="container-fluid py-5 pb-lg-0 px-6 pqrsf">
+<section id="SectionHeight" class="container-fluid py-5 pb-lg-3 px-6 pqrsf">
     <div class="mb-6">
      <div class="col d-flex align-items-center mb-2 mb-lg-5">
          <hr class="Barra w-100">
@@ -23,6 +23,12 @@
      </div>  
     </div>  
 </section>
+
+<script>
+  var body = document.getElementById('main-content');
+  var heightWindow = window.innerHeight;
+  body.setAttribute("style",'height:'+heightWindow+'px; display: flex!important;flex-direction: column!important;');
+</script>
 
 <?php 
     require_once '../includes/footer.php';
