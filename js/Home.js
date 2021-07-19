@@ -1,10 +1,10 @@
 'use strict'
 import { API, config } from './Variables.js';
-//var paths = "/HoyosLuqueWEB/busqueda/";
-var paths = "/HoyosLuque/busqueda/";
+var paths = "/HoyosLuqueWEB/busqueda/";
+//var paths = "/HoyosLuque/busqueda/";
 
-//var Base_url = "http://localhost/HoyosLuqueWEB";
-var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
+var Base_url = "http://localhost/HoyosLuqueWEB/";
+//var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
 var gridData = {
     currentPage: 0,
     LastPage: 0,
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function Dameimage(path, alt, precio, modalidad, codigo) {
         var image = '<img class="card-img-top h-100" src="' + path + '" alt="' + alt + '">';
-        var ancla1 = '<a href="' + Base_url + '/detalle/' + "?cod=" + codigo + '" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>' + precio + '</p></a>';
-        var ancla2 = '<a href="' + Base_url + '/detalle/' + "?cod=" + codigo + '" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>' + modalidad + '</p></a>';
+        var ancla1 = '<a href="' + Base_url + 'detalle/' + "?cod=" + codigo + '" class="btn btn-secundary rounded-0 w-100 h-100 text-uppercase text-left text-white"><p>' + precio + '</p></a>';
+        var ancla2 = '<a href="' + Base_url + 'detalle/' + "?cod=" + codigo + '" class="btn btn-primary rounded-0 w-100 h-100 text-uppercase text-right"><p>' + modalidad + '</p></a>';
         return image + ancla1 + ancla2;
     }
 

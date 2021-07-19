@@ -2,7 +2,7 @@
     require_once 'includes/header.php';
 ?>
 
-<section  class="main cover p-5" id="main-banner">
+<section class="main cover p-5" id="main-banner">
     <form id="Busqueda" class="HomeBuscador bg-white p-4">
         <div class="row justify-content-between px-4">
           <div class="col-lg-3 p-0">

@@ -1,6 +1,6 @@
 <?php
-    //$base_url="https://www.proyectodomus.com/HoyosLuque";
-    $base_url="http://localhost/HoyosLuqueWEB"; 
+    $base_url="https://www.proyectodomus.com/HoyosLuque";
+    //$base_url="http://localhost/HoyosLuqueWEB"; 
 ?>
 <!doctype html>
 <html lang="es">

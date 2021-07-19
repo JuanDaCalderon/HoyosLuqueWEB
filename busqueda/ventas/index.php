@@ -44,23 +44,11 @@
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="PrecioDesde">PRECIO DESDE</label>
-                        <select name="minprecio" class="form-control rounded-0" id="PrecioDesde">
-                            <option value="0" selected>0</option>
-                            <option value="100000">100000</option>
-                            <option value="100000000">100.000.000</option>
-                            <option value="250000000">250.000.000</option>
-                            <option value="500000000">500.000.000</option>
-                        </select>
+                        <input name="minprecio" value="0" type="number" class="form-control rounded-0" id="PrecioDesde" placeholder="0">
                     </div>
                     <div class="col-12 col-lg-2 px-0 px-lg-2">
                         <label class="mb-0" for="PrecioHasta">PRECIO HASTA</label>
-                        <select name="maxprecio" class="form-control rounded-0" id="PrecioHasta">
-                            <option value="" selected>0</option>
-                            <option value="500000000">500.000.000</option>
-                            <option value="1000000000">1.000.000.000</option>
-                            <option value="1500000000">1.500.000.000</option>
-                            <option value="2000000000">2.000.000.000</option>
-                        </select>
+                        <input name="maxprecio" value="" type="number" class="form-control rounded-0" id="PrecioHasta" placeholder="0">
                     </div>
                     <div class="col-12 col-lg-2 px-0 pl-lg-2 pr-md-0">
                         <label class="mb-0" for="Codigo">CÓDIGO</label>
@@ -155,6 +143,7 @@
             </form>
         </nav>
 </section>
+
 <script type="module" src="<?php echo $base_url ?>/js/Grid.js"></script>
 <?php 
     require_once '../../includes/footer.php';

@@ -1,7 +1,7 @@
 'use strict'
 import { API, config } from './Variables.js';
-//var paths = "/HoyosLuqueWEB/busqueda/";
-var paths = "/HoyosLuque/busqueda/";
+var paths = "/HoyosLuqueWEB/busqueda/";
+//var paths = "/HoyosLuque/busqueda/";
 
 //var Base_url = "http://localhost/HoyosLuqueWEB/";
 var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     longitud: parseFloat(property.longitude),
                     asesor: property.broker[0],
                     amenities: property.amenities,
-                    caracteristicas: [{ ele: property.bedrooms, name: 'Habitaciones' }, { ele: property.bathrooms, name: 'Baños' }, { ele: property.parking, name: 'Parqueaderos' }, { ele: property.area_cons, name: 'Area m2' }, { ele: property.build_year, name: 'Año de construcción' }, { ele: property.address, name: 'Dirección' }, , { ele: property.zone, name: 'Zona' }]
+                    caracteristicas: [{ ele: property.bedrooms, name: 'Habitaciones' }, { ele: property.bathrooms, name: 'Baños' }, { ele: property.parking, name: 'Parqueaderos' }, { ele: property.area_cons, name: 'Area m2' }, { ele: property.build_year, name: 'Año de construcción' }, { ele: property.zone, name: 'Zona' }]
                 }
                 imagepro = {
                     ...imagepro,

@@ -1,8 +1,8 @@
 'use strict'
 import { API, config } from './Variables.js';
 
-//var paths = "/HoyosLuqueWEB/busqueda/";
-var paths = "/HoyosLuque/busqueda/";
+var paths = "/HoyosLuqueWEB/busqueda/";
+//var paths = "/HoyosLuque/busqueda/";
 
 //var Base_url = "http://localhost/HoyosLuqueWEB/";
 var Base_url = "https://www.proyectodomus.com/HoyosLuque/";
