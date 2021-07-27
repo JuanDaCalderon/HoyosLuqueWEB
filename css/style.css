@@ -3,11 +3,7 @@
 @font-face {
   font-family: "IconosHL";
   src: url("../assets/fonts/IconosHL.eot?liy16o");
-  src: url("../assets/fonts/IconosHL.eot?liy16o#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/IconosHL.ttf?liy16o") format("truetype"),
-    url("../assets/fonts/IconosHL.woff?liy16o") format("woff"),
-    url("../assets/fonts/IconosHL.svg?liy16o#IconosHL") format("svg");
+  src: url("../assets/fonts/IconosHL.eot?liy16o#iefix") format("embedded-opentype"), url("../assets/fonts/IconosHL.ttf?liy16o") format("truetype"), url("../assets/fonts/IconosHL.woff?liy16o") format("woff"), url("../assets/fonts/IconosHL.svg?liy16o#IconosHL") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -74,7 +70,7 @@ html::-webkit-scrollbar-track {
 
 /* HEADER NAVBAR STYLES*/
 header.NavBar a.Logo {
-  width: 11%;
+  width: 13%;
 }
 
 header.NavBar nav.navbar {
@@ -112,7 +108,7 @@ header.NavBar div.ServiciosDropDown hr {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   }
   header.NavBar a.Logo {
-    width: 25%;
+    width: 27%;
   }
 }
 
@@ -258,11 +254,7 @@ section.destacados a.btn-primary {
 }
 
 section.destacados a.btn-primary:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
 section.destacados a.btn-primary p {
@@ -867,11 +859,7 @@ section.resultados a.btn-primary {
 }
 
 section.resultados a.btn-primary:hover {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(255, 255, 255, 0) 60%);
 }
 
 section.resultados a.btn-primary p {
